@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Lernlandschaft · Funktionen &amp; Grössen</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+  :root{
+    /* ===== Farbkonzept =====
+       Tiefes Marineblau  #005F6A : Titel, Navigation, primaere Buttons
+       Frisches Minzgruen #3EB489 : Erfolg, aktive Status, Hover
+       Helles Graublau    #EFF4F4 : Inhaltskarten
+       Dunkles Schiefergrau #2E4A4C : Fliesstext                       */
+    --brand:#005F6A;
+    --brand-2:#0A7C8A;
+    --mint:#3EB489;
+    --mint-ink:#1E7454;
+    --mint-soft:#E3F5EC;
+    --mint-line:#A8DFC6;
+    --paper:#E2ECEC;
+    --card:#EFF4F4;
+    --card-2:#FFFFFF;
+    --paper-deep:#D8E5E5;
+    --grid:#D2E1E1;
+    --ink:#2E4A4C;
+    --ink-soft:#43676A;
+    --line:#C6D8D8;
+    --line-2:#AAC4C4;
+    --red:#C0392B;
+    --red-soft:#FBECEA;
+    --red-line:#F0C4BE;
+    --amber:#B0781B;
+    --amber-soft:#FCF3DC;
+    accent-color:#005F6A;
+    /* Logo als eingebettete Datenquelle - keine externe Datei noetig */
+    --logo:url("data:image/png;base64,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");
+    --grid-strong:#BCD2D2;
+    --blue:#005F6A;
+    --blue-deep:#005F6A;
+    --green:#1E7454;
+    --shadow:0 1px 2px rgba(10,46,48,.05),0 8px 24px rgba(10,46,48,.07);
+    --radius:14px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"DejaVu Sans Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:24px 24px;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  a{color:var(--brand)}
+  .app{display:flex;min-height:100vh}
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    width:264px;flex:0 0 264px;
+    background:var(--card);
+    backdrop-filter:blur(6px);
+    border-right:1px solid var(--line);
+    padding:22px 16px;
+    position:sticky;top:0;height:100vh;overflow:auto;
+  }
+  .brand{display:flex;gap:12px;align-items:flex-start;padding:4px 8px 18px}
+  .brand .mark{width:42px;height:42px;flex:0 0 42px;border-radius:10px}
+  /* ===== Logo-Kachel ===== */
+  .mark,.brand .mark,.mobilebar .mm{
+    background-color:#fff;background-image:var(--logo);
+    background-size:74%;background-position:center;background-repeat:no-repeat;
+    border:1px solid var(--line);box-shadow:none;color:transparent;font-size:0;
+  }
+
+  .brand h1{font-family:var(--serif);font-size:19px;margin:0;line-height:1.15;font-weight:600;color:var(--brand)}
+  h2.title,.card-topic .k,.theorie h4,.proto-head h2,.proto-card h3,.proto-kpis .kpi-n{color:var(--brand)}
+  .brand p{margin:2px 0 0;font-size:12px;color:var(--ink-soft)}
+  .nav-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding:14px 10px 8px}
+  .navbtn{
+    display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    border:none;background:transparent;cursor:pointer;
+    padding:11px 12px;border-radius:10px;color:var(--ink);
+    font-size:14.5px;font-family:var(--sans);font-weight:500;margin-bottom:2px;
+    transition:background .15s,color .15s;
+  }
+  .navbtn:hover{background:var(--mint-soft)}
+  .navbtn.active{background:var(--brand);color:#fff}
+  .navbtn.active .ico{opacity:1}
+  .navbtn .ico{width:22px;display:inline-flex;justify-content:center;opacity:.85;font-size:16px}
+  .sidebar-foot{font-size:11px;color:var(--ink-soft);padding:16px 10px 4px;border-top:1px solid var(--line);margin-top:14px}
+
+  /* ---------- Main ---------- */
+  .main{flex:1;min-width:0;padding:34px clamp(18px,4vw,54px) 80px}
+  .view{display:none;animation:fade .3s ease}
+  .view.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+  .topic-tag{font-family:var(--serif);font-style:italic}
+  h2.title{font-family:var(--serif);font-size:clamp(28px,4.4vw,42px);font-weight:600;margin:.15em 0 .1em;line-height:1.08}
+  .lead{font-size:16px;color:var(--ink-soft);max-width:64ch}
+
+  /* Home hero */
+  .hero{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:clamp(26px,4vw,44px);position:relative;overflow:hidden;
+    border-left:5px solid var(--mint);
+  }
+  .hero:after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:24px 24px;opacity:.5;mask:linear-gradient(90deg,transparent 55%,#000)}
+  .hero>*{position:relative;z-index:1}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+  .card-topic{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:20px;cursor:pointer;text-align:left;
+    display:flex;flex-direction:column;gap:8px;transition:transform .16s,box-shadow .16s,border-color .16s;
+    border-top:4px solid var(--accent,#005F6A);
+  }
+  .card-topic:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(10,46,48,.13);border-color:var(--line-2)}
+  .card-topic .k{font-family:var(--serif);font-size:20px;font-weight:600}
+  .card-topic .d{font-size:13.5px;color:var(--ink-soft)}
+  .card-topic .go{margin-top:auto;font-size:13px;font-weight:600;color:var(--accent,#005F6A)}
+  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;
+    padding:3px 8px;border-radius:999px;background:#D6E7E7;color:var(--brand);text-transform:uppercase}
+
+  /* Tabs */
+  .tabs{display:inline-flex;background:var(--paper-deep);border-radius:12px;padding:4px;gap:2px;margin:22px 0 8px}
+  .tab{border:none;background:transparent;padding:9px 18px;border-radius:9px;cursor:pointer;
+    font-size:14px;font-weight:600;color:var(--ink-soft);font-family:var(--sans)}
+  .tab.active{background:var(--card-2);color:var(--brand);box-shadow:var(--shadow)}
+  .panel{display:none}
+  .panel.active{display:block}
+
+  /* Practice card */
+  .sheet{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:clamp(20px,3vw,32px);margin-top:14px;position:relative;
+    border-left:5px solid var(--mint);
+  }
+  .sheet-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .sheet-head .meta{font-family:var(--serif);font-size:13px;color:var(--ink-soft)}
+  .scoreline{display:flex;gap:18px;align-items:center;font-size:13px;color:var(--ink-soft)}
+  .scoreline b{color:var(--ink);font-size:15px}
+  .streak{color:var(--green);font-weight:700}
+
+  .qtext{font-size:clamp(18px,2.4vw,22px);font-family:var(--serif);line-height:1.4;margin:10px 0 4px}
+  .qsub{color:var(--ink-soft);font-size:15px;margin-bottom:6px}
+  .answer-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+  input[type=text],input[type=number]{
+    font-family:var(--mono);font-size:19px;padding:11px 14px;border:2px solid var(--line);
+    border-radius:10px;width:190px;background:var(--card-2);color:var(--ink);outline:none;
+  }
+  input:focus{border-color:var(--blue)}
+  .unit-lab{font-family:var(--serif);font-size:19px;color:var(--ink)}
+  select,input.opt{
+    font-family:var(--sans);font-size:14px;padding:9px 12px;border:2px solid var(--line);
+    border-radius:9px;background:var(--card-2);color:var(--ink);
+  }
+  .btn{border:none;cursor:pointer;font-family:var(--sans);font-weight:600;font-size:14.5px;
+    padding:11px 20px;border-radius:10px;transition:filter .15s,transform .05s}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-primary:hover{filter:brightness(1.12)}
+  .btn-green{background:var(--mint);color:#0A2E30}
+  .btn-green:hover{filter:brightness(1.06)}
+  .btn-ghost{background:var(--paper-deep);color:var(--brand)}
+  .btn-ghost:hover{background:var(--line)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+
+  .feedback{margin-top:18px;padding:14px 16px;border-radius:10px;font-size:15px;display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--mint-soft);border:1px solid var(--mint-line);color:var(--mint-ink)}
+  .feedback.no{background:var(--red-soft);border:1px solid var(--red-line);color:var(--red)}
+  .feedback .sol{margin-top:8px;font-family:var(--mono);white-space:pre-wrap;font-size:13.5px;color:var(--ink);line-height:1.6}
+
+  /* Zweisatz block */
+  .zweisatz{font-family:var(--mono);font-size:15px;line-height:1.9;color:var(--ink);
+    background:var(--card-2);border:1px dashed var(--line-2);border-radius:10px;padding:12px 16px;margin-top:6px;display:inline-block}
+  .zweisatz .g{color:var(--green)}
+  .zweisatz .r{color:var(--red);font-weight:700}
+
+  /* MC options (Füllgraphen) */
+  .stimulus{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px 0 4px}
+  .stimulus canvas{border:1px solid var(--line);border-radius:12px;background:#fff}
+  .stimulus .lab{font-family:var(--serif);font-weight:600}
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:18px}
+  .option{border:2px solid var(--line);border-radius:12px;background:var(--card-2);cursor:pointer;padding:8px;
+    display:flex;flex-direction:column;align-items:center;gap:6px;transition:border-color .15s,transform .1s}
+  .option:hover{border-color:var(--mint)}
+  .option .optlab{font-weight:700;font-family:var(--serif);color:var(--ink-soft)}
+  .option.correct{border-color:var(--mint);background:var(--mint-soft)}
+  .option.wrong{border-color:var(--red);background:var(--red-soft)}
+  .option.locked{cursor:default}
+
+  /* Generator form */
+  .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+  .field{display:flex;flex-direction:column;gap:7px}
+  .field label{font-size:13px;font-weight:600;color:var(--ink)}
+  .field .hint{font-size:12px;color:var(--ink-soft)}
+  .checks{display:flex;flex-direction:column;gap:8px;background:var(--card-2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .checks label{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:500;cursor:pointer}
+  .checks input{width:17px;height:17px;accent-color:var(--blue)}
+  .gen-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center}
+  .gen-note{font-size:13px;color:var(--ink-soft)}
+
+  .pill-diff{display:inline-flex;gap:4px;background:var(--paper-deep);border-radius:10px;padding:4px}
+  .pill-diff button{border:none;background:transparent;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13.5px;color:var(--ink-soft)}
+  .pill-diff button.active{background:var(--card-2);color:var(--brand);box-shadow:var(--shadow)}
+
+  .mobilebar{display:none}
+  @media(max-width:820px){
+    .app{flex-direction:column}
+    .sidebar{position:static;width:auto;height:auto;flex:none;display:none;border-right:none;border-bottom:1px solid var(--line)}
+    .sidebar.open{display:block}
+    .mobilebar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:12px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .mobilebar .mm{width:34px;height:34px;border-radius:8px}
+    .mobilebar b{font-family:var(--serif);font-size:16px}
+    .main{padding:22px 18px 70px}
+    input[type=text]{width:150px}
+  }
+  .foot-tip{font-size:12.5px;color:var(--ink-soft);margin-top:10px}
+  .scoreline .p-no{color:var(--red)}
+  .misslog{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-top:14px;padding:2px 18px}
+  .misslog summary{cursor:pointer;font-weight:600;color:var(--red);padding:11px 0;list-style:none}
+  .misslog summary::-webkit-details-marker{display:none}
+  .misslog summary:before{content:'\25b8';margin-right:8px;display:inline-block;transition:transform .15s}
+  .misslog[open] summary:before{transform:rotate(90deg)}
+  .miss-item{border-top:1px solid var(--line);padding:11px 0}
+  .miss-item:first-child{border-top:none}
+  .miss-item .mq{font-size:14.5px;color:var(--ink)}
+  .miss-item .ma{font-size:13.5px;color:var(--ink-soft);margin-top:5px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .miss-item .mx{color:var(--red);font-weight:700}
+  .miss-item .zweisatz{margin-top:0}
+
+  /* ===== Protokoll ===== */
+  .serie-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}
+  .serie-bar .gen-note{margin-right:auto}
+  .proto-overlay{position:fixed;inset:0;background:rgba(20,36,63,.45);display:flex;align-items:flex-start;justify-content:center;z-index:100;overflow:auto;padding:24px}
+  .proto-overlay[hidden]{display:none!important}
+  .proto-card{--card:#ffffff;--line:#D5E2E2;background:#fff;border-radius:16px;max-width:780px;width:100%;box-shadow:0 20px 60px rgba(20,36,63,.3);padding:24px 30px 34px;margin:auto}
+  .proto-actions{display:flex;gap:10px;justify-content:flex-end;margin-bottom:14px}
+  .proto-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--brand);padding-bottom:12px}
+  .proto-eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .proto-head h2{font-family:var(--serif);font-size:26px;margin:2px 0 0;font-weight:600}
+  .proto-badge{font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .proto-meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-soft);margin:12px 0 18px}
+  .proto-line{display:inline-block;min-width:200px;border-bottom:1px solid var(--ink-soft)}
+  .proto-kpis{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+  .proto-kpis .kpi{flex:1;min-width:88px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .proto-kpis .kpi-n{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1}
+  .proto-kpis .kpi-l{font-size:12px;color:var(--ink-soft);margin-top:4px}
+  .proto-tbl{width:100%;border-collapse:collapse;margin:2px 0 16px;font-size:14px}
+  .proto-tbl th{text-align:left;color:var(--ink-soft);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:4px 8px;border-bottom:1px solid var(--line)}
+  .proto-tbl td{padding:8px;border-bottom:1px solid var(--line)}
+  .pbar{display:inline-block;width:120px;height:8px;background:var(--paper-deep);border-radius:6px;overflow:hidden;vertical-align:middle}
+  .pbar-fill{display:block;height:100%}
+  .proto-assess{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:18px}
+  .proto-card h3{font-family:var(--serif);font-size:18px;margin:16px 0 8px;font-weight:600}
+  .proto-none{color:var(--mint-ink);font-size:14px}
+  @media print{
+    .no-print{display:none!important}
+    .app,.mobilebar{display:none!important}
+    body{background:#fff!important}
+    .proto-overlay{position:static!important;display:block!important;background:#fff!important;padding:0!important;overflow:visible!important}
+    .proto-card{box-shadow:none!important;max-width:100%!important;padding:0!important;margin:0!important}
+  }
+
+  /* ===== Theorie ===== */
+  .theorie{max-width:72ch}
+  .theorie p{margin:0 0 12px;font-size:15px;line-height:1.6;color:var(--ink)}
+  .theorie h4{font-family:var(--serif);font-size:17px;font-weight:600;margin:16px 0 6px}
+  .theorie ul{margin:0 0 12px;padding-left:20px;font-size:15px;line-height:1.6}
+  .theorie li{margin:4px 0}
+  .theorie .merke{background:#D6E7E7;border:1px solid #BCD2D2;border-left:4px solid var(--brand);border-radius:10px;padding:11px 14px;margin:14px 0;font-size:15px;line-height:1.55}
+  .theorie .merke b{color:var(--blue-deep)}
+  .theorie .bsp{background:var(--card-2);border:1px dashed var(--line-2);border-radius:10px;padding:11px 14px;margin:12px 0;font-size:14.5px;line-height:1.8;font-family:var(--mono)}
+  .theorie .bsp .lbl{font-family:var(--sans);font-weight:700;color:var(--ink-soft);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:5px}
+  .theorie .frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 .12em;line-height:1.05}
+  .theorie .frac .num{padding:0 .3em .05em}
+  .theorie .frac .den{padding:.05em .3em 0;border-top:2px solid currentColor}
+
+  .illu{margin:14px 0}
+  .illu canvas{background:#fff;border:1px solid var(--line);border-radius:10px}
+  .option canvas{background:#fff;border-radius:8px}
+  .illu-row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+  .illu-item{text-align:center}
+  .illu-cap{font-size:11.5px;color:var(--ink-soft);margin-top:5px}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="mark" role="img" aria-label="Lernlandschaft Mathematik"></div>
+      <div>
+        <h1>Lernlandschaft</h1>
+        <p>Funktionen &amp; Grössen</p>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-label">Start</div>
+      <button class="navbtn active" data-view="home"><span class="ico">▦</span> Übersicht</button>
+      <div class="nav-label">Themen</div>
+      <button class="navbtn" data-view="groessen"><span class="ico">⇄</span> Grössen umrechnen</button>
+      <button class="navbtn" data-view="direkt"><span class="ico">↗</span> Direkte Proportionalität</button>
+      <button class="navbtn" data-view="indirekt"><span class="ico">↘</span> Indirekte Proportionalität</button>
+      <button class="navbtn" data-view="fuell"><span class="ico">◠</span> Füllgraphen von Gefässen</button>
+      <button class="navbtn" data-view="koordinaten"><span class="ico">⊕</span> Koordinatensystem</button>
+    </nav>
+    <div class="sidebar-foot">
+      Übe frei im Reiter «Üben» oder erstelle im Reiter «Arbeitsblatt» ein PDF mit Aufgaben&nbsp;+ Lösungen.
+    </div>
+  </aside>
+
+  <div style="flex:1;min-width:0">
+    <div class="mobilebar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="mm" role="img" aria-label="Lernlandschaft Mathematik"></div><b>Lernlandschaft</b></div>
+      <button class="btn btn-ghost" id="menuToggle">Menü</button>
+    </div>
+
+    <main class="main">
+      <!-- HOME -->
+      <section class="view active" id="view-home">
+        <div class="hero">
+          <div class="eyebrow">Mathematik · Lernlandschaft</div>
+          <h2 class="title">Funktionen und <span class="topic-tag">Grössen</span></h2>
+          <p class="lead">Übe die Themen aus «Funktionen» und «Grössen» selbstständig – mit sofortiger Rückmeldung und ausgeschriebenem Lösungsweg. Zu jedem Thema kannst du dir ein Arbeitsblatt mit Lösungen als PDF erzeugen.</p>
+        </div>
+
+        <div class="cards">
+          <button class="card-topic" data-view="groessen" style="--accent:#005F6A">
+            <span class="badge" style="background:#eef3fb;color:#244f9e">Grössen</span>
+            <span class="k">Grössen umrechnen</span>
+            <span class="d">Länge, Masse, Zeit, Fläche, Hohlmass und Geld sicher umrechnen.</span>
+            <span class="go">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="direkt" style="--accent:#1E7454">
+            <span class="badge" style="background:#eaf7ef;color:#1E7454">Funktionen</span>
+            <span class="k">Direkte Proportionalität</span>
+            <span class="d">Je mehr, desto mehr – Sachaufgaben mit dem Zweisatz lösen.</span>
+            <span class="go">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="indirekt" style="--accent:#8F6115">
+            <span class="badge" style="background:#fbf2e3;color:#a9761f">Funktionen</span>
+            <span class="k">Indirekte Proportionalität</span>
+            <span class="d">Je mehr, desto weniger – umgekehrter Zweisatz.</span>
+            <span class="go">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="fuell" style="--accent:#A34E2C">
+            <span class="badge" style="background:#fdeeec;color:#C0392B">Funktionen</span>
+            <span class="k">Füllgraphen von Gefässen</span>
+            <span class="d">Gefässformen und ihre Füllhöhen-Graphen einander zuordnen.</span>
+            <span class="go">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="koordinaten" style="--accent:#7A5AC4">
+            <span class="badge" style="background:#f1ecfa;color:#5e39a6">Koordinaten</span>
+            <span class="k">Koordinatensystem</span>
+            <span class="d">Punkte ablesen, einzeichnen, Quadranten bestimmen und Figuren zeichnen.</span>
+            <span class="go">Öffnen →</span>
+          </button>
+        </div>
+
+        <div class="sheet" style="margin-top:26px">
+          <div class="eyebrow">So funktioniert's</div>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Üben &amp; Arbeitsblätter erstellen</h3>
+          <p style="color:var(--ink-soft);margin:0;max-width:70ch">Jedes Thema hat zwei Reiter. Unter <b>Üben</b> bekommst du beliebig viele Aufgaben, gibst deine Lösung ein und erhältst sofort die Kontrolle samt Lösungsweg. Unter <b>Arbeitsblatt erstellen</b> wählst du Themen, Anzahl und Schwierigkeit – und lädst ein druckfertiges PDF mit separaten Lösungen herunter.</p>
+        </div>
+      </section>
+
+      <!-- GRÖSSEN -->
+      <section class="view" id="view-groessen">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Grössen»</span></div>
+        <h2 class="title">Grössen umrechnen</h2>
+        <p class="lead">Rechne zwischen den Einheiten einer Grösse um. Achte auf das Komma – ein Schritt in der Einheitentabelle bedeutet meist Faktor 10 (bei Flächen 100, bei Rauminhalten 1000).</p>
+        <div class="tabs" data-tabs="groessen">
+          <button class="tab active" data-panel="theorie">Theorie</button>
+          <button class="tab" data-panel="uebn">Üben</button>
+          <button class="tab" data-panel="gen">Arbeitsblatt erstellen</button>
+        </div>
+        <div class="panel active" data-panel="theorie"><div class="sheet"><div class="theorie">
+          <p>Beim <b>Umrechnen</b> von Grössen verschiebt sich das Komma. In der Einheitentabelle bedeutet ein Schritt zur nächstkleineren Einheit meist <b>·10</b>, zur nächstgrösseren <b>:10</b>.</p>
+          <div class="merke"><b>Wichtig:</b> Bei <b>Flächen</b> ist ein Schritt ·100 (bzw. :100), bei <b>Rauminhalten</b> ·1000 (bzw. :1000).</div>
+          <div class="bsp"><span class="lbl">Beispiel</span>5 cm = 50 mm &nbsp;·&nbsp; 2.5 m = 250 cm &nbsp;·&nbsp; 3 dm² = 300 cm²</div>
+        </div></div></div>
+        <div class="panel" data-panel="uebn" id="groessen-uebn"></div>
+        <div class="panel" data-panel="gen" id="groessen-gen"></div>
+      </section>
+
+      <!-- DIREKT -->
+      <section class="view" id="view-direkt">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen»</span> · Grundaufgaben</div>
+        <h2 class="title">Direkte Proportionalität</h2>
+        <p class="lead">Verdoppelt sich die eine Grösse, verdoppelt sich auch die andere. Löse die Sachaufgaben mit dem Zweisatz.</p>
+        <div class="tabs" data-tabs="direkt">
+          <button class="tab active" data-panel="theorie">Theorie</button>
+          <button class="tab" data-panel="uebn">Üben</button>
+          <button class="tab" data-panel="gen">Arbeitsblatt erstellen</button>
+        </div>
+        <div class="panel active" data-panel="theorie"><div class="sheet"><div class="theorie">
+          <p>Bei der <b>direkten Proportionalität</b> gilt: <i>je mehr, desto mehr</i>. Verdoppelt sich die eine Grösse, verdoppelt sich auch die andere – der <b>Quotient</b> bleibt gleich.</p>
+          <p>Gelöst wird mit dem <b>Zweisatz</b>: von der gegebenen Menge auf die gesuchte schliessen.</p>
+          <div class="bsp"><span class="lbl">Zweisatz</span>6 l ≙ 9.18 Fr.<br>16 l ≙ x<br>x = 9.18 · 16 : 6 = 24.48 Fr.</div>
+          <div class="illu" data-draw="plot:line"></div>
+        </div></div></div>
+        <div class="panel" data-panel="uebn" id="direkt-uebn"></div>
+        <div class="panel" data-panel="gen" id="direkt-gen"></div>
+      </section>
+
+      <!-- INDIREKT -->
+      <section class="view" id="view-indirekt">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen»</span> · Grundaufgaben</div>
+        <h2 class="title">Indirekte Proportionalität</h2>
+        <p class="lead">Wird die eine Grösse grösser, wird die andere kleiner – ihr Produkt bleibt gleich. Löse mit dem umgekehrten Zweisatz.</p>
+        <div class="tabs" data-tabs="indirekt">
+          <button class="tab active" data-panel="theorie">Theorie</button>
+          <button class="tab" data-panel="uebn">Üben</button>
+          <button class="tab" data-panel="gen">Arbeitsblatt erstellen</button>
+        </div>
+        <div class="panel active" data-panel="theorie"><div class="sheet"><div class="theorie">
+          <p>Bei der <b>indirekten (umgekehrten) Proportionalität</b> gilt: <i>je mehr, desto weniger</i>. Wird die eine Grösse grösser, wird die andere kleiner – das <b>Produkt</b> bleibt gleich.</p>
+          <div class="merke"><b>Merke:</b> a · b bleibt konstant. Beim Zweisatz wird deshalb umgekehrt gerechnet: erst multiplizieren, dann dividieren.</div>
+          <div class="bsp"><span class="lbl">Zweisatz (umgekehrt)</span>4 Arbeiter ≙ 12 h<br>6 Arbeiter ≙ x<br>x = 4 · 12 : 6 = 8 h</div>
+          <div class="illu" data-draw="plot:curve"></div>
+        </div></div></div>
+        <div class="panel" data-panel="uebn" id="indirekt-uebn"></div>
+        <div class="panel" data-panel="gen" id="indirekt-gen"></div>
+      </section>
+
+      <!-- FÜLL -->
+      <section class="view" id="view-fuell">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen»</span> · Grundaufgaben</div>
+        <h2 class="title">Füllgraphen von Gefässen</h2>
+        <p class="lead">Wasser fliesst gleichmässig in ein Gefäss. Der Graph zeigt, wie die Füllhöhe&nbsp;h vom Volumen&nbsp;V abhängt. Enge Stellen lassen den Pegel schnell steigen, breite Stellen langsam.</p>
+        <div class="tabs" data-tabs="fuell">
+          <button class="tab active" data-panel="theorie">Theorie</button>
+          <button class="tab" data-panel="uebn">Üben</button>
+          <button class="tab" data-panel="gen">Arbeitsblatt erstellen</button>
+        </div>
+        <div class="panel active" data-panel="theorie"><div class="sheet"><div class="theorie">
+          <p>Wasser fliesst <b>gleichmässig</b> in ein Gefäss. Der Füllgraph zeigt die Füllhöhe&nbsp;h in Abhängigkeit vom Volumen&nbsp;V.</p>
+          <div class="merke"><b>Faustregel:</b> <b>Enge</b> Stelle → Pegel steigt schnell → Graph <b>steil</b>. <b>Breite</b> Stelle → Pegel steigt langsam → Graph <b>flach</b>. <b>Gleich breit</b> → Graph ist eine <b>Gerade</b>.</div>
+          <p>Bei zusammengesetzten Gefässen setzt sich der Graph aus solchen Abschnitten zusammen (steiler werdend, flacher werdend oder geradlinig).</p>
+          <div class="illu" data-draw="vessel:erw_ger_verj"></div>
+        </div></div></div>
+        <div class="panel" data-panel="uebn" id="fuell-uebn"></div>
+        <div class="panel" data-panel="gen" id="fuell-gen"></div>
+      </section>
+
+      <!-- KOORDINATEN -->
+      <section class="view" id="view-koordinaten">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Koordinaten»</span> · Grundaufgaben</div>
+        <h2 class="title">Koordinatensystem</h2>
+        <p class="lead">Lies Punkte im Koordinatensystem ab, zeichne vorgegebene Punkte ein, bestimme Quadranten – oder zeichne aus einer Punktfolge eine Figur.</p>
+        <div class="tabs" data-tabs="koordinaten">
+          <button class="tab active" data-panel="theorie">Theorie</button>
+          <button class="tab" data-panel="uebn">Üben</button>
+          <button class="tab" data-panel="gen">Arbeitsblatt erstellen</button>
+        </div>
+        <div class="panel active" data-panel="theorie"><div class="sheet"><div class="theorie">
+          <p>Ein Punkt wird im Koordinatensystem durch ein Zahlenpaar <b>P(x&nbsp;/&nbsp;y)</b> angegeben.</p>
+          <ul><li><b>x</b> = Rechtswert (waagrecht, x-Achse)</li><li><b>y</b> = Hochwert (senkrecht, y-Achse)</li></ul>
+          <div class="merke"><b>Merke:</b> Zuerst x (nach rechts/links), dann y (nach oben/unten). Der Ursprung ist O(0&nbsp;/&nbsp;0). Die vier Quadranten I–IV zählt man gegen den Uhrzeigersinn.</div>
+          <div class="bsp"><span class="lbl">Beispiel</span>P(3 / -2): 3 nach rechts, 2 nach unten → Quadrant IV</div>
+          <div class="illu" data-draw="koord:3:-2"></div>
+        </div></div></div>
+        <div class="panel" data-panel="uebn" id="koord-uebn"></div>
+        <div class="panel" data-panel="gen" id="koord-gen"></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   Hilfsfunktionen
+============================================================ */
+/*SHARED-START*/
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+const ri = (a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+const rf = (a,b)=>a+Math.random()*(b-a);
+const pick = a=>a[Math.floor(Math.random()*a.length)];
+const shuffle = a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+function fmt(x){
+  if(!isFinite(x)) return String(x);
+  let s = (Math.round(x*1e6)/1e6).toFixed(6);
+  if(s.indexOf('.')>=0) s=s.replace(/0+$/,'').replace(/\.$/,'');
+  return s;
+}
+function fmtCH(x){ return fmt(x); } // Dezimalpunkt (schweizerisch in Mathe üblich)
+function approx(a,b){ return Math.abs(a-b) <= Math.max(0.001, Math.abs(b)*0.01); }
+function parseNum(s){ if(s==null) return NaN; return parseFloat(String(s).replace(',','.').replace(/[^0-9.\-]/g,'')); }
+function escHF(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+/*SHARED-END*/
+function pushMiss(store, missEl, listEl, cntEl, html){ store.unshift(html); listEl.innerHTML=store.join(''); cntEl.textContent=store.length; missEl.hidden=false; }
+function missItem(qHTML,userHTML,correctHTML){ return '<div class="miss-item"><div class="mq">'+qHTML+'</div><div class="ma">Deine Antwort: <b class="mx">'+userHTML+'</b> · '+correctHTML+'</div></div>'; }
+
+/* ============================================================
+   Navigation & Tabs
+============================================================ */
+function showView(id){
+  $$('.view').forEach(v=>v.classList.toggle('active', v.id==='view-'+id));
+  $$('.navbtn').forEach(b=>b.classList.toggle('active', b.dataset.view===id));
+  $('#sidebar').classList.remove('open');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+$('#menuToggle').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
+$$('.tabs').forEach(tabs=>{
+  tabs.addEventListener('click',e=>{
+    const b=e.target.closest('.tab'); if(!b) return;
+    const wrap=tabs.parentElement;
+    $$('.tab',tabs).forEach(t=>t.classList.toggle('active',t===b));
+    $$('.panel',wrap).forEach(p=>p.classList.toggle('active',p.dataset.panel===b.dataset.panel));
+  });
+});
+
+/* ============================================================
+   1) GRÖSSEN UMRECHNEN
+============================================================ */
+/*SHARED-START*/
+const GROESSEN = {
+  laenge:{name:'Länge', units:[['km',1000],['m',1],['dm',0.1],['cm',0.01],['mm',0.001]]},
+  masse:{name:'Masse', units:[['t',1e6],['kg',1000],['g',1],['mg',0.001]]},
+  zeit:{name:'Zeit', units:[['d',86400],['h',3600],['min',60],['s',1]]},
+  flaeche:{name:'Fläche', units:[['km²',1e6],['ha',1e4],['a',100],['m²',1],['dm²',0.01],['cm²',0.0001],['mm²',1e-6]]},
+  raummass:{name:'Volumen (Raummass)', units:[['m³',1e9],['dm³',1e6],['cm³',1e3],['mm³',1]]},
+  volumen:{name:'Hohlmass', units:[['hl',100],['l',1],['dl',0.1],['cl',0.01],['ml',0.001]]},
+  vol_hohl:{name:'Volumen ↔ Hohlmass',
+    // gemeinsame Basis: 1 Liter = 1 dm³
+    units:[['m³',1000],['dm³',1],['cm³',0.001],['mm³',1e-6],['hl',100],['l',1],['dl',0.1],['cl',0.01],['ml',0.001]],
+    cross:{A:['m³','dm³','cm³','mm³'], B:['hl','l','dl','cl','ml']}},
+  speicher:{name:'Speicherkapazität', units:[['TB',1e12],['GB',1e9],['MB',1e6],['kB',1000],['B',1]]},
+  geld:{name:'Geld', units:[['Fr.',100],['Rp.',1]]}
+};
+function niceValue(diff){
+  // liefert einen "schönen" Ausgangswert je nach Schwierigkeit
+  if(diff===1) return pick([1,2,3,4,5,6,7,8,10,12,15,20,25,50,100,200,500])* (Math.random()<0.15?10:1);
+  if(diff===2){ const base=pick([1,2,3,4,5,6,8,12,15,25]); const dec=pick([0,0,0.5,0.25,0.75,0.2,0.4]); return base+dec; }
+  const base=pick([1,2,3,4,5,7,8,12]); const dec=pick([0.05,0.125,0.045,0.75,0.375,0.6,0.34,0.008]); return Math.round((base+dec)*1000)/1000;
+}
+// Zeit ist Basis 60/24 -> eigene Wertwahl, damit das Ergebnis immer glatt (kopfrechenbar) ist
+function genZeit(diff){
+  const u=GROESSEN.zeit.units; const fac=name=>u.find(x=>x[0]===name)[1];
+  // nur kopffreundliche Paare
+  const pairs=[['min','s'],['s','min'],['h','min'],['min','h'],['d','h'],['h','d'],['h','s'],['s','h']];
+  const [from,to]=pick(pairs);
+  const ratio=fac(from)/fac(to);           // >1: in kleinere Einheit, <1: in grössere
+  let val;
+  if(ratio>=1){
+    // Ergebnis = val*ratio (ganz). Wert: ganze Zahlen bzw. saubere Halbe/Viertel
+    let vals = diff===1 ? [1,2,3,4,5,6] : diff===2 ? [1,2,3,4,0.5,1.5,2.5] : [0.25,0.5,0.75,1.5,2.5,3.5];
+    if(ratio>=3600) vals = diff===1 ? [1,2] : [0.5,1,1.5,2,0.25];   // h->s: keine krummen Werte
+    val = pick(vals);
+  } else {
+    // Ziel ist grössere Einheit: wähle val als Vielfaches, damit Ergebnis glatt wird
+    const inv=Math.round(1/ratio);          // 60, 24 oder 3600
+    const targets = diff===1 ? [1,2,3] : diff===2 ? [0.5,1,1.5,2] : [0.25,0.75,1.25,2.5];
+    val = pick(targets)*inv;                 // val ist dadurch ganzzahlig
+  }
+  return {i:u.findIndex(x=>x[0]===from), j:u.findIndex(x=>x[0]===to), val};
+}
+function genGroessen(catKeys, diff){
+  const cat = GROESSEN[pick(catKeys)];
+  const us = cat.units;
+  let i,j, tries=0, val;
+  if(cat===GROESSEN.zeit){
+    const z=genZeit(diff); i=z.i; j=z.j; val=z.val;
+  } else if(cat.cross){
+    // Immer zwischen den beiden Systemen umrechnen (Raummass <-> Hohlmass)
+    const idx=name=>us.findIndex(u=>u[0]===name);
+    let g1=cat.cross.A.map(idx), g2=cat.cross.B.map(idx);
+    if(Math.random()<0.5){ const t=g1; g1=g2; g2=t; }
+    do{ i=pick(g1); j=pick(g2); tries++; }
+    while(diff===1 && Math.abs(Math.log10(us[i][1]/us[j][1]))>3 && tries<40);
+  }else{
+    // Schwierigkeit steuert "Distanz" der Einheiten
+    do{ i=ri(0,us.length-1); j=ri(0,us.length-1); tries++; }
+    while((i===j || (diff===1 && Math.abs(i-j)>2)) && tries<40);
+    if(i===j) j=(i+1)%us.length;
+  }
+  const from=us[i], to=us[j];
+  if(val===undefined) val = niceValue(diff);
+  const ans = val*from[1]/to[1];
+  return {
+    cat:cat.name,
+    text:`${fmtCH(val)} ${from[0]}  =  ______ ${to[0]}`,
+    prompt:`${fmtCH(val)} ${from[0]} =`,
+    unit:to[0], answer:ans,
+    line:`${fmtCH(val)} ${from[0]} = ${fmtCH(ans)} ${to[0]}`
+  };
+}
+
+
+/*SHARED-END*/
+
+/* ===== Protokoll (Auswertung einer Übungsserie) ===== */
+function protoEsc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function newDiffAgg(){return {1:{ok:0,n:0},2:{ok:0,n:0},3:{ok:0,n:0}};}
+function aggRecord(agg,diff,ok){if(!agg[diff])agg[diff]={ok:0,n:0};agg[diff].n++;if(ok)agg[diff].ok++;}
+function setProg(id,n){var e=document.getElementById(id);if(e)e.textContent=n?('Aufgaben in dieser Serie: '+n):'Noch keine Aufgabe in dieser Serie.';}
+function serieBarHTML(pfx){return '<div class="serie-bar"><span class="gen-note" id="'+pfx+'-prog">Noch keine Aufgabe in dieser Serie.</span><button class="btn btn-ghost" id="'+pfx+'-reset">Neue Serie</button><button class="btn btn-primary" id="'+pfx+'-eval">Serie auswerten</button></div>';}
+function protoBar(p){return '<span class="pbar"><span class="pbar-fill" style="width:'+p+'%;background:'+(p>=70?'#2f9e5f':(p>=50?'#e6a23c':'#d5473e'))+'"></span></span>';}
+function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'leicht (Basis)',2:'mittel',3:'schwer'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
+function protoAssess(pct){if(pct>=90)return['sicher beherrscht','#1f7a45','#e9f7ef'];if(pct>=70)return['grösstenteils sicher','#846516','#f6efd8'];if(pct>=50)return['noch unsicher','#a9631b','#fbeede'];return['noch nicht sicher','#b23c30','#fdeeec'];}
+function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Thema wird sicher beherrscht.';else if(pct>=70)base='Das Thema ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Thema ist aber noch unsicher – weiter üben.';else base='Das Thema ist noch nicht sicher – die Grundlagen sollten wiederholt werden.';var weak='';if(byDiff){var worst=null,labs={1:'leicht',2:'mittel',3:'schwer'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
+function ensureProtoOverlay(){var ov=document.getElementById('protoOverlay');if(ov)return ov;ov=document.createElement('div');ov.className='proto-overlay';ov.id='protoOverlay';ov.hidden=true;ov.innerHTML='<div class="proto-card"><div class="proto-actions no-print"><button class="btn btn-primary" id="protoPrint">Drucken / als PDF speichern</button><button class="btn btn-ghost" id="protoClose">Schliessen</button></div><div id="protoBody"></div></div>';document.body.appendChild(ov);ov.querySelector('#protoPrint').addEventListener('click',function(){window.print();});ov.querySelector('#protoClose').addEventListener('click',function(){ov.hidden=true;});ov.addEventListener('click',function(e){if(e.target===ov)ov.hidden=true;});return ov;}
+function showProtocol(d){var ov=ensureProtoOverlay();var pct=d.total?Math.round(d.correct/d.total*100):0;var a=protoAssess(pct);var date=new Date().toLocaleDateString('de-CH');var missList=(d.misses&&d.misses.length)?('<h3>Fehler im Detail ('+d.misses.length+')</h3><div class="proto-miss">'+d.misses.join('')+'</div>'):'<p class="proto-none">Keine Fehler in dieser Serie – alle Aufgaben richtig gelöst.</p>';document.getElementById('protoBody').innerHTML='<div class="proto-head"><div><div class="proto-eyebrow">Protokoll · '+protoEsc(d.app)+'</div><h2>'+protoEsc(d.tool)+'</h2></div><div class="proto-badge" style="color:'+a[1]+';background:'+a[2]+'">'+a[0]+'</div></div><div class="proto-meta"><span>Name: <span class="proto-line"></span></span><span>Datum: '+date+'</span></div><div class="proto-kpis"><div class="kpi"><div class="kpi-n">'+d.total+'</div><div class="kpi-l">Aufgaben</div></div><div class="kpi"><div class="kpi-n" style="color:#1E7454">'+d.correct+'</div><div class="kpi-l">richtig</div></div><div class="kpi"><div class="kpi-n" style="color:#d5473e">'+d.wrong+'</div><div class="kpi-l">falsch</div></div><div class="kpi"><div class="kpi-n">'+pct+' %</div><div class="kpi-l">Erfolgsquote</div></div>'+(d.maxStreak?'<div class="kpi"><div class="kpi-n">'+d.maxStreak+'</div><div class="kpi-l">längste Serie</div></div>':'')+'</div>'+protoDiffTable(d.byDiff)+'<div class="proto-assess"><b>Einschätzung:</b> '+protoAssessText(pct,d.byDiff)+'</div>'+missList;ov.hidden=false;ov.scrollTop=0;}
+
+/* ---- Grössen: Üben ---- */
+(function(){
+  const host = $('#groessen-uebn');
+  const catKeys = Object.keys(GROESSEN);
+  let cur=null, stats={ok:0,wrong:0,streak:0}, locked=false, misses=[], agg=newDiffAgg(), maxStreak=0, lastSig='';
+  host.innerHTML = `
+    <div class="sheet">
+      <div class="sheet-head">
+        <div class="scoreline"><span>Richtig: <b id="g-ok">0</b></span><span>Falsch: <b id="g-no" class="p-no">0</b></span><span class="streak" id="g-streak">Serie: 0 🔥</span></div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span class="gen-note">Bereich:</span>
+          <select id="g-cat">
+            <option value="all">Gemischt</option>
+            ${catKeys.map(k=>`<option value="${k}">${GROESSEN[k].name}</option>`).join('')}
+          </select>
+          <span class="pill-diff" id="g-diff">
+            <button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button>
+          </span>
+        </div>
+      </div>
+      <p class="qsub" id="g-cat-lab"></p>
+      <div class="qtext" id="g-q"></div>
+      <div class="answer-row">
+        <input type="text" id="g-in" placeholder="Ergebnis" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="decimal">
+        <span class="unit-lab" id="g-unit"></span>
+        <button class="btn btn-green" id="g-check">Kontrollieren</button>
+        <button class="btn btn-ghost" id="g-next">Nächste Aufgabe</button>
+      </div>
+      <div class="feedback" id="g-fb"></div>
+      ${serieBarHTML('g')}
+    </div>
+    <details class="misslog" id="g-miss" hidden><summary>Gemachte Fehler (<span id="g-mc">0</span>)</summary><div id="g-mlist"></div></details>`;
+  let diff=1;
+  $('#g-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+    diff=+b.dataset.d;$$('#g-diff button').forEach(x=>x.classList.toggle('active',x===b));next();});
+  function keys(){ const c=$('#g-cat').value; return c==='all'?catKeys:[c]; }
+  function next(){
+    locked=false; $('#g-check').disabled=false;
+    var _t=0,_s;do{cur=genGroessen(keys(),diff);_s=cur.prompt+'|'+cur.unit;_t++;}while(_s===lastSig&&_t<12);lastSig=_s;
+    $('#g-cat-lab').textContent = 'Grösse: '+cur.cat;
+    $('#g-q').textContent = cur.prompt;
+    $('#g-unit').textContent = cur.unit;
+    $('#g-in').value=''; $('#g-in').focus();
+    $('#g-fb').className='feedback';
+  }
+  function check(){
+    if(!cur||locked) return;
+    const v=parseNum($('#g-in').value);
+    if(isNaN(v)){ return; }
+    locked=true; $('#g-check').disabled=true;
+    const fb=$('#g-fb');
+    const ok=approx(v,cur.answer);
+    if(ok){
+      stats.ok++; stats.streak++;
+      fb.className='feedback ok show';
+      fb.innerHTML=`<b>Richtig!</b> ${cur.line}`;
+    }else{
+      stats.wrong++; stats.streak=0;
+      fb.className='feedback no show';
+      fb.innerHTML=`<b>Nicht ganz.</b> Richtig wäre: <span class="sol">${cur.line}</span>`;
+      pushMiss(misses, $('#g-miss'), $('#g-mlist'), $('#g-mc'),
+        missItem(escHF(cur.text), escHF(fmtCH(v)+' '+cur.unit), 'Richtig: <b>'+escHF(cur.line)+'</b>'));
+    }
+    $('#g-ok').textContent=stats.ok;$('#g-no').textContent=stats.wrong;
+    $('#g-streak').textContent='Serie: '+stats.streak+' 🔥';
+    aggRecord(agg,diff,ok); if(stats.streak>maxStreak)maxStreak=stats.streak; setProg('g-prog',stats.ok+stats.wrong);
+  }
+  $('#g-cat').addEventListener('change',next);
+  $('#g-check').addEventListener('click',check);
+  $('#g-next').addEventListener('click',next);
+  $('#g-eval').addEventListener('click',()=>{const tot=stats.ok+stats.wrong;if(!tot){$('#g-prog').textContent='Bitte zuerst Aufgaben lösen.';return;}showProtocol({app:'Funktionen und Grössen',tool:'Grössen umrechnen',total:tot,correct:stats.ok,wrong:stats.wrong,maxStreak:maxStreak,byDiff:agg,misses:misses});});
+  $('#g-reset').addEventListener('click',()=>{stats={ok:0,wrong:0,streak:0};misses=[];maxStreak=0;agg=newDiffAgg();$('#g-ok').textContent='0';$('#g-no').textContent='0';$('#g-streak').textContent='Serie: 0 🔥';$('#g-mlist').innerHTML='';$('#g-mc').textContent='0';$('#g-miss').hidden=true;$('#g-prog').textContent='Noch keine Aufgabe in dieser Serie.';next();});
+  $('#g-in').addEventListener('keydown',e=>{if(e.key==='Enter'){ if($('#g-fb').classList.contains('show')) next(); else check(); }});
+  next();
+})();
+
+/* ---- Grössen: Generator ---- */
+(function(){
+  const host=$('#groessen-gen');
+  const catKeys=Object.keys(GROESSEN);
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="eyebrow">Arbeitsblatt «Grössen umrechnen»</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>Themen (Grössen)</label>
+          <div class="checks" id="gg-themes">
+            ${catKeys.map((k,i)=>`<label><input type="checkbox" value="${k}" ${i<3?'checked':''}> ${GROESSEN[k].name}</label>`).join('')}
+          </div>
+        </div>
+        <div class="field">
+          <label>Serie / Bezeichnung</label>
+          <input class="opt" id="gg-serie" placeholder="z. B. Serie 3" value="Serie 1">
+          <label style="margin-top:8px">Anzahl Aufgaben</label>
+          <input class="opt" id="gg-count" type="number" min="4" max="40" value="16">
+          <label style="margin-top:8px">Schwierigkeit</label>
+          <span class="pill-diff" id="gg-diff">
+            <button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button>
+          </span>
+        </div>
+      </div>
+      <div class="gen-actions">
+        <button class="btn btn-primary" id="gg-make">PDF mit Aufgaben &amp; Lösungen erstellen</button>
+        <span class="gen-note">Layout nach der Vorlage «Grössen» AB.</span>
+      </div>
+    </div>`;
+  let diff=1;
+  $('#gg-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#gg-diff button').forEach(x=>x.classList.toggle('active',x===b));});
+  $('#gg-make').addEventListener('click',()=>{
+    const themes=$$('#gg-themes input:checked').map(c=>c.value);
+    if(!themes.length){ alert('Bitte mindestens eine Grösse auswählen.'); return; }
+    const n=Math.max(4,Math.min(40,+$('#gg-count').value||16));
+    const tasks=[]; for(let k=0;k<n;k++) tasks.push(genGroessen(themes,diff));
+    const themeNames=themes.map(t=>GROESSEN[t].name).join(', ');
+    buildGroessenPDF({serie:$('#gg-serie').value.trim(),themes:themeNames,diff,tasks});
+  });
+})();
+
+/* ============================================================
+   2) DIREKTE & 3) INDIREKTE PROPORTIONALITÄT
+============================================================ */
+/*SHARED-START*/
+const DIFFLAB=['','leicht','mittel','schwer'];
+
+// direkte Kontexte
+function directTask(diff){
+  // Schwierigkeit steuert, wie "krumm" die zweite Menge ist
+  const A2 = diff===1 ? [4,5,6,8,10,12,15,20] : diff===2 ? [7,9,11,14,18,22,25,30] : [13,17,23,27,33,45,6.5,4.5];
+  const gens=[
+    // Preis pro Menge
+    ()=>{const p=+rf(1.75,1.98).toFixed(2);const a1=pick([4,5,6,8]);const a2=pick(A2);
+      return C(a1,+(a1*p).toFixed(2),a2,`${a1} Liter Benzin kosten §b Fr. Wie viel kosten ${fmtCH(a2)} Liter?`,'l','Fr.','Fr.');},
+    ()=>{const p=+rf(2.4,6.5).toFixed(2);const a1=pick([2,3,4,5]);const a2=pick(A2);
+      return C(a1,+(a1*p).toFixed(2),a2,`${a1} kg Bananen kosten §b Fr. Was bezahlt man für ${fmtCH(a2)} kg?`,'kg','Fr.','Fr.');},
+    ()=>{const p=+rf(3.2,6.8).toFixed(2);const a1=pick([2,3,4,5]);const a2=pick(A2);
+      return C(a1,+(a1*p).toFixed(2),a2,`${a1} m Absperrband kosten §b Fr. Wie viel kosten ${fmtCH(a2)} m?`,'m','Fr.','Fr.');},
+    ()=>{const p=+rf(0.8,2.4).toFixed(2);const a1=pick([5,6,8,10]);const a2=pick(A2);
+      return C(a1,+(a1*p).toFixed(2),a2,`${a1} Brötchen kosten §b Fr. Was kosten ${fmtCH(a2)} Brötchen?`,'Stk.','Fr.','Fr.');},
+    // Strecke ~ Zeit (konstantes Tempo)
+    ()=>{const v=pick([72,78,84,90,96,110]);const a1=pick([2,3,4]);const a2=pick([5,6,7,8,9]);
+      return C(a1,v*a1,a2,`Ein ICE legt in ${a1} Stunden ${v*a1} km zurück. Wie weit kommt er bei gleichem Tempo in ${a2} Stunden?`,'h',null,'km');},
+    ()=>{const v=pick([11,12,13,14,15]);const a1=pick([3,4,5]);const a2=pick([7,8,9,10,12]);
+      return C(a1,v*a1,a2,`Eine Velofahrerin fährt in ${a1} Stunden ${v*a1} km. Wie weit kommt sie in ${a2} Stunden?`,'h',null,'km');},
+    // Lohn
+    ()=>{const w=+rf(23,36).toFixed(2);const a1=pick([3,4,5,6]);const a2=pick(A2);
+      return C(a1,+(w*a1).toFixed(2),a2,`Für ${a1} Stunden Ferienjob gibt es §b Fr. Wie viel Lohn erhält man für ${fmtCH(a2)} Stunden?`,'h','Fr.','Fr.');},
+    // Rezept skalieren
+    ()=>{const g=pick([60,75,80,90,120]);const a1=pick([4,6,8]);const a2=pick([9,10,12,15,18]);
+      return C(a1,g*a1,a2,`Ein Kuchenrezept braucht für ${a1} Personen ${g*a1} g Zucker. Wie viel Zucker für ${a2} Personen?`,'Pers.',null,'g');},
+    ()=>{const ml=pick([25,30,40,50]);const a1=pick([6,8,10,12]);const a2=pick([15,18,20,24,9]);
+      return C(a1,ml*a1,a2,`Für ${a1} Cocktails braucht man ${ml*a1} ml Sirup. Wie viel Sirup für ${a2} Cocktails?`,'Gläser',null,'ml');},
+    // Durchfluss / Rate
+    ()=>{const r=pick([6,8,9,12,15]);const a1=pick([3,4,5]);const a2=pick([7,8,10,12,15]);
+      return C(a1,r*a1,a2,`Aus einem Gartenschlauch fliessen in ${a1} Minuten ${r*a1} Liter Wasser. Wie viel in ${a2} Minuten?`,'min',null,'l');},
+    ()=>{const r=pick([18,20,24,30]);const a1=pick([2,3,4]);const a2=pick([5,7,8,10]);
+      return C(a1,r*a1,a2,`Ein Drucker schafft in ${a1} Minuten ${r*a1} Seiten. Wie viele Seiten in ${a2} Minuten?`,'min',null,'Seiten');},
+    ()=>{const r=pick([4,5,6,8]);const a1=pick([3,4,5]);const a2=pick([7,9,10,12]);
+      return C(a1,r*a1,a2,`Eine Solaranlage liefert in ${a1} Stunden ${r*a1} kWh Strom. Wie viel in ${a2} Stunden gleicher Sonne?`,'h',null,'kWh');},
+    // Verbrauch pro Distanz
+    ()=>{const l=+rf(5.5,8.5).toFixed(1);const a1=pick([100,150,200]);const a2=pick([250,300,350,450]);const b=+(l*a1/100).toFixed(2);
+      return C(a1,b,a2,`Ein Auto verbraucht auf ${a1} km ${fmtCH(b)} Liter Benzin. Wie viel auf ${a2} km?`,'km',null,'l');},
+    // Wechselkurs
+    ()=>{const k=+rf(1.02,1.08).toFixed(3);const a1=pick([50,80,100,120]);const a2=pick([200,250,350,75]);const b=+(a1*k).toFixed(2);
+      return C(a1,b,a2,`${a1} Franken sind §b Euro wert. Wie viel Euro erhält man für ${a2} Franken?`,'Fr.',null,'Euro');},
+    // Stückzahlen
+    ()=>{const s=pick([9,12,14,16]);const a1=pick([2,3,4]);const a2=pick([7,8,10,12,15]);
+      return C(a1,s*a1,a2,`Für ${a1} m² Terrasse braucht man ${s*a1} Bodenplatten. Wie viele Platten für ${a2} m²?`,'m²',null,'Platten');},
+    ()=>{const s=pick([8,10,12,15]);const a1=pick([3,4,5]);const a2=pick([9,12,14,18]);
+      return C(a1,s*a1,a2,`Eine Halskette aus ${a1} cm Länge enthält ${s*a1} Perlen. Wie viele Perlen für ${a2} cm?`,'cm',null,'Perlen');},
+    // Lesen / Zeit
+    ()=>{const s=pick([6,8,9,12]);const a1=pick([10,15,20]);const a2=pick([25,30,45,50]);
+      return C(a1,s*a1,a2,`Lena liest in ${a1} Minuten ${s*a1} Seiten. Wie viele Seiten schafft sie in ${a2} Minuten?`,'min',null,'Seiten');},
+    // Mischung Beton
+    ()=>{const s=pick([15,20,25]);const a1=pick([2,3,4]);const a2=pick([5,7,9,12]);
+      return C(a1,s*a1,a2,`Für ${a1} Sack Zement braucht man ${s*a1} Schaufeln Sand. Wie viele Schaufeln für ${a2} Sack?`,'Sack',null,'Schaufeln');},
+  ];
+  const t=gens[ri(0,gens.length-1)]();
+  const ans = t.b1*t.a2/t.a1;
+  t.answer = /Fr\.|Euro/.test(t.ansUnit)? +ans.toFixed(2) : Math.round(ans*100)/100;
+  t.kind='direkt';
+  return t;
+}
+// Kontext-Helfer: füllt §b (Betrag b1) in den Text ein
+function C(a1,b1,a2,text,aLab,bUnit,ansUnit){
+  return {a1,b1,a2,aLab,bUnit:bUnit||ansUnit,ansUnit,text:text.replace('§b',fmtCH(b1))};
+}
+// indirekte Kontexte
+function inverseTask(diff){
+  const gens=[
+    // Personal ~ Zeit
+    ()=>{const a1=pick([6,8,10,12,15]);const b1=pick([120,150,180,200,240]);const a2=pick([15,18,20,9,16,24,5]);
+      return I(a1,b1,a2,`${a1} Arbeiter bauen ein Haus in zusammen ${b1} Stunden. Wie viele Stunden brauchen ${a2} Arbeiter?`,'Arbeiter','h','h');},
+    ()=>{const a1=pick([3,4,5,6]);const b1=pick([8,10,12,15,18]);const a2=pick([2,8,9,10,12]);
+      return I(a1,b1,a2,`${a1} Malerinnen streichen eine Fassade in ${b1} Stunden. Wie lange brauchen ${a2} Malerinnen?`,'Malerinnen','h','h');},
+    ()=>{const a1=pick([4,5,6,8]);const b1=pick([9,10,12,15]);const a2=pick([2,3,4,9,10]);
+      return I(a1,b1,a2,`${a1} Lastwagen transportieren den Aushub in ${b1} Stunden ab. Wie lange dauert es mit ${a2} Lastwagen?`,'Lastwagen','h','h');},
+    ()=>{const a1=pick([2,3,4,5]);const b1=pick([6,8,9,12]);const a2=pick([6,8,10,12]);
+      return I(a1,b1,a2,`${a1} Bagger heben eine Baugrube in ${b1} Tagen aus. Wie lange brauchen ${a2} Bagger?`,'Bagger','Tage','Tage');},
+    ()=>{const a1=pick([3,4,6,8]);const b1=pick([12,15,18,24]);const a2=pick([9,10,12,16,2]);
+      return I(a1,b1,a2,`${a1} Näherinnen fertigen die Kostüme in ${b1} Tagen. Wie lange brauchen ${a2} Näherinnen?`,'Näherinnen','Tage','Tage');},
+    ()=>{const a1=pick([2,3,4,5]);const b1=pick([6,8,10,12]);const a2=pick([6,8,12,15]);
+      return I(a1,b1,a2,`${a1} Mähdrescher ernten ein Feld in ${b1} Stunden. Wie lange dauert es mit ${a2} Mähdreschern?`,'Mähdrescher','h','h');},
+    // "mindestens": Anzahl gesucht (aufrunden)
+    ()=>{const a1=pick([8,10,12,14]);const b1=pick([8,9,10,12]);const a2=pick([5,6,7,4]);
+      return I(a1,b1,a2,`${a1} Wasserpumpen füllen einen Pool in ${b1} Stunden. Wie viele Pumpen braucht es mindestens, um ihn in ${a2} Stunden zu füllen?`,'Pumpen','h','Pumpen',true);},
+    ()=>{const a1=pick([4,5,6,8]);const b1=pick([12,15,18,20]);const a2=pick([8,9,10,7]);
+      return I(a1,b1,a2,`${a1} Kopierer erledigen einen Auftrag in ${b1} Minuten. Wie viele Kopierer braucht man mindestens, um ihn in ${a2} Minuten zu schaffen?`,'Kopierer','min','Kopierer',true);},
+    ()=>{const a1=pick([3,4,6,8]);const b1=pick([20,24,30,36]);const a2=pick([12,15,16,18]);
+      return I(a1,b1,a2,`${a1} Zuflüsse füllen ein Becken in ${b1} Minuten. Wie viele Zuflüsse braucht es mindestens, damit es in ${a2} Minuten voll ist?`,'Rohre','min','Rohre',true);},
+    // Vorrat ~ Verbraucher
+    ()=>{const a1=pick([12,15,18,20]);const b1=pick([10,12,15,20]);const a2=pick([8,9,24,25,30]);
+      return I(a1,b1,a2,`Der Futtervorrat reicht für ${a1} Kühe genau ${b1} Tage. Für wie viele Tage reicht er bei ${a2} Kühen?`,'Kühe','Tage','Tage');},
+    ()=>{const a1=pick([6,8,10,12]);const b1=pick([12,15,18,24]);const a2=pick([9,16,20,4]);
+      return I(a1,b1,a2,`Der Proviant reicht ${a1} Wanderern für ${b1} Tage. Wie viele Tage reicht er bei ${a2} Wanderern?`,'Personen','Tage','Tage');},
+    // Geschwindigkeit ~ Fahrzeit
+    ()=>{const a1=pick([60,72,80,90]);const b1=pick([4,5,6]);const a2=pick([100,120,40,48,45]);
+      return I(a1,b1,a2,`Bei ${a1} km/h dauert eine Fahrt ${b1} Stunden. Wie lange dauert sie bei ${a2} km/h?`,'km/h','h','h');},
+    ()=>{const a1=pick([4,5,6]);const b1=pick([6,8,9,12]);const a2=pick([3,8,10,12]);
+      return I(a1,b1,a2,`Bei ${a1} km/h braucht eine Wanderung ${b1} Stunden. Wie lange dauert sie bei ${a2} km/h?`,'km/h','h','h');},
+    // Maschinen ~ Zeit
+    ()=>{const a1=pick([2,3,4,6]);const b1=pick([12,18,24,36]);const a2=pick([8,9,12,16]);
+      return I(a1,b1,a2,`${a1} Server berechnen die Auswertung in ${b1} Stunden. Wie lange dauert es mit ${a2} Servern?`,'Server','h','h');},
+    ()=>{const a1=pick([3,4,5,6]);const b1=pick([8,10,12,15]);const a2=pick([2,8,9,10]);
+      return I(a1,b1,a2,`${a1} Traktoren pflügen das Feld in ${b1} Stunden. Wie lange brauchen ${a2} Traktoren?`,'Traktoren','h','h');},
+    // Kosten pro Kopf (Gesamtsumme fix)
+    ()=>{const a1=pick([4,5,6,8]);const b1=pick([15,18,24,30,36]);const a2=pick([9,10,12,3]);
+      return I(a1,b1,a2,`Teilen sich ${a1} Freunde ein Geschenk, zahlt jeder ${fmtCH(b1)} Fr. Wie viel zahlt jeder, wenn ${a2} Freunde mitmachen?`,'Personen','Fr.','Fr.');},
+  ];
+  const t=gens[ri(0,gens.length-1)]();
+  const ans = t.a1*t.b1/t.a2;   // umgekehrt proportional: a1·b1 = a2·x
+  t.answer = /Fr\./.test(t.ansUnit)? +ans.toFixed(2) : Math.round(ans*100)/100;
+  t.needCeil = !!t.invAns && !Number.isInteger(t.answer);
+  t.kind='indirekt';
+  return t;
+}
+function I(a1,b1,a2,text,aLab,bUnit,ansUnit,invAns){
+  return {a1,b1,a2,aLab,bUnit,ansUnit,text,invAns:!!invAns};
+}
+function zweisatzHTML(t){
+  const op = t.kind==='direkt'
+     ? `x = ${fmtCH(t.b1)} · ${fmtCH(t.a2)} : ${fmtCH(t.a1)}`
+     : `x = ${fmtCH(t.a1)} · ${fmtCH(t.b1)} : ${fmtCH(t.a2)}`;
+  let extra='';
+  if(t.needCeil) extra = `\n<span class="r">→ also ${Math.ceil(t.answer)} ${t.ansUnit} (aufrunden)</span>`;
+  return `<span class="zweisatz">${t.a1} ${t.aLab}   <span class="g">≙</span>   ${fmtCH(t.b1)} ${t.bUnit}
+${t.a2} ${t.aLab}   <span class="g">≙</span>   x
+<span class="r">${op} = ${fmtCH(t.answer)} ${t.ansUnit}</span>${extra}</span>`;
+}
+function zweisatzLines(t){
+  const op = t.kind==='direkt'
+     ? `x = ${fmtCH(t.b1)} · ${fmtCH(t.a2)} : ${fmtCH(t.a1)} = ${fmtCH(t.answer)} ${t.ansUnit}`
+     : `x = ${fmtCH(t.a1)} · ${fmtCH(t.b1)} : ${fmtCH(t.a2)} = ${fmtCH(t.answer)} ${t.ansUnit}`;
+  const L=[
+    `${t.a1} ${t.aLab}   ≙   ${fmtCH(t.b1)} ${t.bUnit}`,
+    `${t.a2} ${t.aLab}   ≙   x`,
+    op
+  ];
+  if(t.needCeil) L.push(`→ also ${Math.ceil(t.answer)} ${t.ansUnit} (aufrunden)`);
+  return L;
+}
+/*SHARED-END*/
+
+function buildPropPractice(hostSel, prefix, gen, title){
+  const host=$(hostSel);
+  let cur=null, stats={ok:0,wrong:0,streak:0}, diff=1, locked=false, misses=[], agg=newDiffAgg(), maxStreak=0, lastSig='';
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="sheet-head">
+        <div class="scoreline"><span>Richtig: <b id="${prefix}-ok">0</b></span><span>Falsch: <b id="${prefix}-no" class="p-no">0</b></span><span class="streak" id="${prefix}-streak">Serie: 0 🔥</span></div>
+        <span class="pill-diff" id="${prefix}-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+      </div>
+      <div class="qtext" id="${prefix}-q"></div>
+      <div class="answer-row">
+        <input type="text" id="${prefix}-in" placeholder="Ergebnis" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="decimal">
+        <span class="unit-lab" id="${prefix}-unit"></span>
+        <button class="btn btn-green" id="${prefix}-check">Kontrollieren</button>
+        <button class="btn btn-ghost" id="${prefix}-sol">Lösungsweg</button>
+        <button class="btn btn-ghost" id="${prefix}-next">Nächste Aufgabe</button>
+      </div>
+      <div class="feedback" id="${prefix}-fb"></div>
+      ${serieBarHTML(prefix)}
+    </div>
+    <details class="misslog" id="${prefix}-miss" hidden><summary>Gemachte Fehler (<span id="${prefix}-mc">0</span>)</summary><div id="${prefix}-mlist"></div></details>`;
+  $('#'+prefix+'-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#'+prefix+'-diff button').forEach(x=>x.classList.toggle('active',x===b));next();});
+  function next(){ locked=false; $('#'+prefix+'-check').disabled=false; var _t=0;do{cur=gen(diff);_t++;}while(cur.text===lastSig&&_t<12);lastSig=cur.text;
+    $('#'+prefix+'-q').textContent=cur.text;
+    $('#'+prefix+'-unit').textContent=cur.ansUnit;
+    $('#'+prefix+'-in').value=''; $('#'+prefix+'-in').focus();
+    $('#'+prefix+'-fb').className='feedback'; }
+  function check(){ if(!cur||locked)return; const v=parseNum($('#'+prefix+'-in').value); if(isNaN(v))return;
+    locked=true; $('#'+prefix+'-check').disabled=true; const fb=$('#'+prefix+'-fb');
+    const good = approx(v,cur.answer)||(cur.needCeil&&Math.round(v)===Math.ceil(cur.answer));
+    if(good){stats.ok++;stats.streak++;fb.className='feedback ok show';fb.innerHTML=`<b>Richtig!</b><br>${zweisatzHTML(cur)}`;}
+    else{stats.wrong++;stats.streak=0;fb.className='feedback no show';fb.innerHTML=`<b>Leider falsch.</b> So geht der Zweisatz:<br>${zweisatzHTML(cur)}`;
+      pushMiss(misses, $('#'+prefix+'-miss'), $('#'+prefix+'-mlist'), $('#'+prefix+'-mc'),
+        missItem(escHF(cur.text), escHF(fmtCH(v)+' '+cur.ansUnit), zweisatzHTML(cur)));}
+    $('#'+prefix+'-ok').textContent=stats.ok;$('#'+prefix+'-no').textContent=stats.wrong;$('#'+prefix+'-streak').textContent='Serie: '+stats.streak+' 🔥';
+    aggRecord(agg,diff,good); if(stats.streak>maxStreak)maxStreak=stats.streak; setProg(prefix+'-prog',stats.ok+stats.wrong);
+  }
+  function showSol(){ if(!cur)return; const fb=$('#'+prefix+'-fb'); fb.className='feedback ok show'; fb.innerHTML=`<b>Lösungsweg:</b><br>${zweisatzHTML(cur)}`; }
+  $('#'+prefix+'-check').addEventListener('click',check);
+  $('#'+prefix+'-sol').addEventListener('click',showSol);
+  $('#'+prefix+'-next').addEventListener('click',next);
+  $('#'+prefix+'-eval').addEventListener('click',()=>{const tot=stats.ok+stats.wrong;if(!tot){$('#'+prefix+'-prog').textContent='Bitte zuerst Aufgaben lösen.';return;}showProtocol({app:'Funktionen und Grössen',tool:(title||'Proportionalität'),total:tot,correct:stats.ok,wrong:stats.wrong,maxStreak:maxStreak,byDiff:agg,misses:misses});});
+  $('#'+prefix+'-reset').addEventListener('click',()=>{stats={ok:0,wrong:0,streak:0};misses=[];maxStreak=0;agg=newDiffAgg();$('#'+prefix+'-ok').textContent='0';$('#'+prefix+'-no').textContent='0';$('#'+prefix+'-streak').textContent='Serie: 0 🔥';$('#'+prefix+'-mlist').innerHTML='';$('#'+prefix+'-mc').textContent='0';$('#'+prefix+'-miss').hidden=true;$('#'+prefix+'-prog').textContent='Noch keine Aufgabe in dieser Serie.';next();});
+  $('#'+prefix+'-in').addEventListener('keydown',e=>{if(e.key==='Enter'){if($('#'+prefix+'-fb').classList.contains('show'))next();else check();}});
+  next();
+}
+buildPropPractice('#direkt-uebn','d', directTask, 'Direkte Proportionalität');
+buildPropPractice('#indirekt-uebn','i', inverseTask, 'Indirekte Proportionalität');
+
+function buildPropGenerator(hostSel,prefix,gen,titleShort){
+  const host=$(hostSel);
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="eyebrow">Arbeitsblatt «${titleShort}»</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>Serie / Bezeichnung</label>
+          <input class="opt" id="${prefix}g-serie" value="Serie 1">
+          <label style="margin-top:8px">Anzahl Aufgaben</label>
+          <input class="opt" id="${prefix}g-count" type="number" min="3" max="20" value="8">
+        </div>
+        <div class="field">
+          <label>Schwierigkeit</label>
+          <span class="pill-diff" id="${prefix}g-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+          <p class="hint" style="margin-top:10px">Jede Aufgabe wird mit ausgeschriebenem Zweisatz-Lösungsweg im Lösungsteil abgebildet.</p>
+        </div>
+      </div>
+      <div class="gen-actions">
+        <button class="btn btn-primary" id="${prefix}g-make">PDF mit Aufgaben &amp; Lösungen erstellen</button>
+        <span class="gen-note">Layout nach «Funktionen» · Grundaufgaben AB.</span>
+      </div>
+    </div>`;
+  let diff=1;
+  $('#'+prefix+'g-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#'+prefix+'g-diff button').forEach(x=>x.classList.toggle('active',x===b));});
+  $('#'+prefix+'g-make').addEventListener('click',()=>{
+    const n=Math.max(3,Math.min(20,+$('#'+prefix+'g-count').value||8));
+    const tasks=[]; for(let k=0;k<n;k++) tasks.push(gen(diff));
+    buildPropPDF({serie:$('#'+prefix+'g-serie').value.trim(),title:titleShort,diff,tasks});
+  });
+}
+buildPropGenerator('#direkt-gen','d', directTask,'Direkte Proportionalität');
+buildPropGenerator('#indirekt-gen','i', inverseTask,'Indirekte Proportionalität');
+
+/* ============================================================
+   4) FÜLLGRAPHEN VON GEFÄSSEN
+============================================================ */
+/*SHARED-START*/
+const ARCH_IDS=['zylinder','eng_oben','weit_oben','kegel_spitz_oben','kegel_spitz_unten','bauch','taille','flasche','stufe_eng_weit','stufe_weit_eng'];
+// Graphen-Familien: gleiche Familie => qualitativ gleiche Kurvenform (nicht als Distraktoren mischen)
+const ARCH_FAM={zylinder:'gerade',eng_oben:'konvex',kegel_spitz_oben:'konvex',weit_oben:'konkav',kegel_spitz_unten:'konkav',bauch:'bauch',taille:'taille',flasche:'flasche',stufe_eng_weit:'stufeA',stufe_weit_eng:'stufeB'};
+// Zusammengesetzte Gefässe: Segmente "enger werdend" / "breiter werdend" / "gleichmässig"
+function pieceProf(pts){return function(t){t=Math.max(0,Math.min(1,t));for(var i=1;i<pts.length;i++){if(t<=pts[i][0]){var a=pts[i-1],b=pts[i],f=(t-a[0])/((b[0]-a[0])||1);return a[1]+(b[1]-a[1])*f;}}return pts[pts.length-1][1];};}
+const COMPOSITE={
+ verj_ger:{fam:'c_verj_ger',name:'verjüngend, dann gleichmässig',points:[[0,1],[0.5,0.55],[1,0.55]],explain:'Unten wird das Gefäss enger, oben ist es gleich breit. Der Pegel steigt zuerst immer schneller, dann gleichmässig (Kurve, dann Gerade).'},
+ ger_verj:{fam:'c_ger_verj',name:'gleichmässig, dann verjüngend',points:[[0,0.7],[0.5,0.7],[1,0.4]],explain:'Unten gleich breit, oben wird es enger. Der Pegel steigt zuerst gleichmässig, dann immer schneller (Gerade, dann Kurve nach oben).'},
+ erw_ger:{fam:'c_erw_ger',name:'breiter werdend, dann gleichmässig',points:[[0,0.5],[0.5,0.95],[1,0.95]],explain:'Unten wird das Gefäss breiter, oben ist es gleich breit. Der Pegel steigt zuerst immer langsamer, dann gleichmässig.'},
+ ger_erw:{fam:'c_ger_erw',name:'gleichmässig, dann breiter werdend',points:[[0,0.6],[0.5,0.6],[1,1]],explain:'Unten gleich breit, oben wird es breiter. Der Pegel steigt zuerst gleichmässig, dann immer langsamer (Gerade, dann abflachende Kurve).'},
+ erw_ger_verj:{fam:'c_egv',name:'breiter – gleichmässig – enger',points:[[0,0.45],[0.34,0.8],[0.66,0.8],[1,0.45]],explain:'Unten breiter werdend, in der Mitte gleichmässig, oben enger werdend. Der Pegel steigt langsam, dann gleichmässig, dann schnell.'},
+ verj_ger_erw:{fam:'c_vge',name:'enger – gleichmässig – breiter',points:[[0,0.9],[0.34,0.55],[0.66,0.55],[1,0.9]],explain:'Unten enger werdend, in der Mitte gleichmässig, oben breiter werdend. Der Pegel steigt schnell, dann gleichmässig, dann langsam.'},
+ ger_erw_ger:{fam:'c_geg',name:'gleichmässig – breiter – gleichmässig',points:[[0,0.55],[0.34,0.55],[0.66,0.95],[1,0.95]],explain:'Unten und oben gleichmässig, dazwischen wird es breiter. Der Pegel steigt gleichmässig, dann langsamer, dann wieder gleichmässig (flacher).'},
+ ger_verj_ger:{fam:'c_gvg',name:'gleichmässig – enger – gleichmässig',points:[[0,0.9],[0.34,0.9],[0.66,0.5],[1,0.5]],explain:'Unten und oben gleichmässig, dazwischen wird es enger. Der Pegel steigt gleichmässig, dann schneller, dann wieder gleichmässig (steiler).'}
+};
+Object.keys(COMPOSITE).forEach(function(k){ARCH_IDS.push(k);ARCH_FAM[k]=COMPOSITE[k].fam;});
+function makeProfile(id){
+  if(COMPOSITE[id]){var c=COMPOSITE[id];return {id:id,name:c.name,prof:pieceProf(c.points),explain:c.explain};}
+  let prof,name,explain;
+  switch(id){
+    case 'zylinder': name='Zylinder';
+      prof=t=>1;
+      explain='Überall gleich breit. Die Füllhöhe wächst gleichmässig – der Graph ist eine Gerade.'; break;
+    case 'eng_oben': {const top=rf(0.30,0.45); name='nach oben enger';
+      prof=t=>1-(1-top)*t;
+      explain='Wird nach oben enger. Dieselbe Wassermenge hebt den Pegel immer stärker – der Graph wird steiler (konvex, nach oben gekrümmt).'; break;}
+    case 'weit_oben': {const bot=rf(0.30,0.45); name='nach oben weiter';
+      prof=t=>bot+(1-bot)*t;
+      explain='Wird nach oben breiter. Der Pegel steigt zuerst schnell, dann immer langsamer – der Graph flacht ab (konkav).'; break;}
+    case 'kegel_spitz_oben': {name='Kegel (Spitze oben)';
+      prof=t=>1-0.9*t;
+      explain='Läuft nach oben fast in eine Spitze zu. Der Pegel steigt gegen oben dramatisch schneller – ein stark nach oben gekrümmter Graph.'; break;}
+    case 'kegel_spitz_unten': {name='Kegel (Spitze unten)';
+      prof=t=>0.1+0.9*t;
+      explain='Beginnt fast in einer Spitze und wird nach oben weit. Der Pegel steigt zuerst rasant, dann viel langsamer – ein stark abflachender Graph.'; break;}
+    case 'bauch': {const neck=rf(0.32,0.46); name='bauchig';
+      prof=t=>neck+(1-neck)*Math.sin(Math.PI*t);
+      explain='Unten und oben eng, in der Mitte breit. Der Pegel steigt schnell, dann langsam, dann wieder schnell.'; break;}
+    case 'taille': {const waist=rf(0.32,0.46); name='mit Taille';
+      prof=t=>1-(1-waist)*Math.sin(Math.PI*t);
+      explain='Unten und oben breit, in der Mitte eng. Der Pegel steigt langsam, dann schnell, dann wieder langsam.'; break;}
+    case 'flasche': {const body=rf(0.58,0.7),neck=rf(0.32,0.42); name='Flasche';
+      prof=t=> t<body?1:neck;
+      explain='Breiter Körper mit engem Hals. Zuerst steigt der Pegel gleichmässig, im Hals dann plötzlich viel schneller (Knick, dann steiler).'; break;}
+    case 'stufe_eng_weit': {const h=rf(0.45,0.55),r1=rf(0.5,0.62); name='zwei Stufen (unten eng)';
+      prof=t=> t<h?r1:1;
+      explain='Ein schmaler unterer und ein breiter oberer Abschnitt. Der Graph besteht aus zwei Geraden: erst steil, dann ein Knick und flacher.'; break;}
+    case 'stufe_weit_eng': {const h=rf(0.45,0.55),r2=rf(0.5,0.62); name='zwei Stufen (unten weit)';
+      prof=t=> t<h?1:r2;
+      explain='Ein breiter unterer und ein schmaler oberer Abschnitt. Der Graph besteht aus zwei Geraden: erst flach, dann ein Knick und steiler.'; break;}
+  }
+  return {id,name,prof,explain};
+}
+
+/* ---- Zeichenfunktionen (Canvas) ---- */
+function makeCanvas(size){
+  const c=document.createElement('canvas');
+  const dpr=2;
+  c.width=size*dpr; c.height=size*dpr; c.style.width=size+'px'; c.style.height=size+'px';
+  const ctx=c.getContext('2d'); ctx.scale(dpr,dpr); return {c,ctx,size};
+}
+function drawVessel(ctx,size,prof){
+  const N=90,padX=size*0.17,padY=size*0.1;
+  const cx=size/2, top=padY, bottom=size-padY, hgt=bottom-top;
+  let rmax=0; for(let i=0;i<=N;i++) rmax=Math.max(rmax,prof(i/N));
+  const sc=(size/2-padX)/rmax;
+  const L=[],R=[];
+  for(let i=0;i<=N;i++){const t=i/N;const rr=prof(t)*sc;const y=bottom-t*hgt;L.push([cx-rr,y]);R.push([cx+rr,y]);}
+  ctx.clearRect(0,0,size,size);
+  // Innenfläche (Glas-Ton)
+  ctx.beginPath();ctx.moveTo(L[0][0],L[0][1]);
+  for(const p of L)ctx.lineTo(p[0],p[1]);
+  for(let i=R.length-1;i>=0;i--)ctx.lineTo(R[i][0],R[i][1]);
+  ctx.closePath();ctx.fillStyle='#eaf1ff';ctx.fill();
+  // Wände + Boden (oben offen)
+  ctx.lineWidth=size*0.014;ctx.strokeStyle='#15305c';ctx.lineJoin='round';ctx.lineCap='round';
+  ctx.beginPath();
+  ctx.moveTo(L[L.length-1][0],L[L.length-1][1]);
+  for(let i=L.length-1;i>=0;i--)ctx.lineTo(L[i][0],L[i][1]);
+  ctx.lineTo(R[0][0],R[0][1]);
+  for(let i=0;i<R.length;i++)ctx.lineTo(R[i][0],R[i][1]);
+  ctx.stroke();
+}
+function drawGraph(ctx,size,prof){
+  const N=120,pad=size*0.17;
+  const x0=pad,y0=size-pad,x1=size-pad*0.55,y1=pad*0.55;
+  const pW=x1-x0,pH=y0-y1;
+  const A=[],ts=[];
+  for(let i=0;i<=N;i++){const t=i/N;const r=prof(t);A.push(r*r);ts.push(t);}
+  const V=[0];for(let i=1;i<=N;i++)V.push(V[i-1]+(A[i]+A[i-1])/2*(1/N));
+  const Vmax=V[N];
+  ctx.clearRect(0,0,size,size);
+  // Achsen
+  ctx.strokeStyle='#9fb2d0';ctx.lineWidth=size*0.009;ctx.lineCap='round';ctx.lineJoin='round';
+  ctx.beginPath();ctx.moveTo(x0,y1-size*0.03);ctx.lineTo(x0,y0);ctx.lineTo(x1+size*0.03,y0);ctx.stroke();
+  // Pfeilspitzen
+  const ah=size*0.028;
+  ctx.beginPath();ctx.moveTo(x0,y1-size*0.05);ctx.lineTo(x0-ah,y1-size*0.05+ah*1.4);ctx.moveTo(x0,y1-size*0.05);ctx.lineTo(x0+ah,y1-size*0.05+ah*1.4);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(x1+size*0.05,y0);ctx.lineTo(x1+size*0.05-ah*1.4,y0-ah);ctx.moveTo(x1+size*0.05,y0);ctx.lineTo(x1+size*0.05-ah*1.4,y0+ah);ctx.stroke();
+  // Kurve
+  ctx.strokeStyle='#2f62c4';ctx.lineWidth=size*0.018;ctx.beginPath();
+  for(let i=0;i<=N;i++){const x=x0+(V[i]/Vmax)*pW;const y=y0-ts[i]*pH;i?ctx.lineTo(x,y):ctx.moveTo(x,y);}
+  ctx.stroke();
+  // Labels
+  ctx.fillStyle='#15305c';ctx.font='italic '+(size*0.1)+'px Georgia,serif';
+  ctx.fillText('h',x0-size*0.11,y1+size*0.01);
+  ctx.fillText('V',x1+size*0.02,y0+size*0.12);
+}
+// Leeres Achsenkreuz (h über V) ohne Kurve – zum Selberzeichnen
+function drawGraphAxes(ctx,size){
+  const pad=size*0.17;
+  const x0=pad,y0=size-pad,x1=size-pad*0.55,y1=pad*0.55;
+  ctx.clearRect(0,0,size,size);
+  ctx.strokeStyle='#9fb2d0';ctx.lineWidth=size*0.009;ctx.lineCap='round';ctx.lineJoin='round';
+  ctx.beginPath();ctx.moveTo(x0,y1-size*0.03);ctx.lineTo(x0,y0);ctx.lineTo(x1+size*0.03,y0);ctx.stroke();
+  const ah=size*0.028;
+  ctx.beginPath();ctx.moveTo(x0,y1-size*0.05);ctx.lineTo(x0-ah,y1-size*0.05+ah*1.4);ctx.moveTo(x0,y1-size*0.05);ctx.lineTo(x0+ah,y1-size*0.05+ah*1.4);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(x1+size*0.05,y0);ctx.lineTo(x1+size*0.05-ah*1.4,y0-ah);ctx.moveTo(x1+size*0.05,y0);ctx.lineTo(x1+size*0.05-ah*1.4,y0+ah);ctx.stroke();
+  ctx.fillStyle='#15305c';ctx.font='italic '+(size*0.1)+'px Georgia,serif';
+  ctx.fillText('h',x0-size*0.11,y1+size*0.01);
+  ctx.fillText('V',x1+size*0.02,y0+size*0.12);
+}
+/*SHARED-END*/
+
+/* ---- Füllgraphen: Üben (Multiple Choice) ---- */
+(function(){
+  const host=$('#fuell-uebn');
+  let stats={ok:0,wrong:0,streak:0}, locked=false, answerIdx=-1, cur=null, misses=[], maxStreak=0, lastSig='';
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="sheet-head">
+        <div class="scoreline"><span>Richtig: <b id="f-ok">0</b></span><span>Falsch: <b id="f-no" class="p-no">0</b></span><span class="streak" id="f-streak">Serie: 0 🔥</span></div>
+        <button class="btn btn-ghost" id="f-next">Nächste Aufgabe</button>
+      </div>
+      <p class="qsub" id="f-prompt"></p>
+      <div class="stimulus" id="f-stim"></div>
+      <div class="options" id="f-opts"></div>
+      <div class="feedback" id="f-fb"></div>
+      ${serieBarHTML('f')}
+    </div>
+    <details class="misslog" id="f-miss" hidden><summary>Gemachte Fehler (<span id="f-mc">0</span>)</summary><div id="f-mlist"></div></details>`;
+  function newQ(){
+    locked=false;
+    let dir,ansId,_t=0,_s;
+    do{ dir = Math.random()<0.5?'v2g':'g2v'; ansId=pick(ARCH_IDS); _s=dir+ansId; _t++; }while(_s===lastSig&&_t<12);
+    lastSig=_s;
+    const answer=makeProfile(ansId);
+    // Distraktoren möglichst aus anderen Form-Familien (eindeutige Zuordnung)
+    let pool=ARCH_IDS.filter(x=>x!==ansId && ARCH_FAM[x]!==ARCH_FAM[ansId]);
+    let distIds=shuffle(pool).slice(0,3);
+    if(distIds.length<3) distIds=distIds.concat(shuffle(ARCH_IDS.filter(x=>x!==ansId&&!distIds.includes(x))).slice(0,3-distIds.length));
+    const opts=shuffle([answer,...distIds.map(makeProfile)]);
+    answerIdx=opts.indexOf(answer);
+    cur={dir,answer,opts};
+    $('#f-prompt').textContent = dir==='v2g'
+      ? 'Welcher Füllgraph passt zu diesem Gefäss?'
+      : 'Welches Gefäss passt zu diesem Füllgraphen?';
+    // Stimulus
+    const stim=$('#f-stim'); stim.innerHTML='';
+    const {c,ctx}=makeCanvas(190);
+    (dir==='v2g'?drawVessel:drawGraph)(ctx,190,answer.prof);
+    stim.appendChild(c);
+    const lab=document.createElement('div');lab.className='lab';
+    lab.textContent = dir==='v2g'?'Gefäss':'Graph';
+    stim.appendChild(lab);
+    // Optionen
+    const wrap=$('#f-opts'); wrap.innerHTML='';
+    opts.forEach((o,idx)=>{
+      const div=document.createElement('div');div.className='option';div.dataset.idx=idx;
+      div.tabIndex=0;div.setAttribute('role','button');div.setAttribute('aria-label','Option '+String.fromCharCode(65+idx));
+      const {c,ctx}=makeCanvas(150);
+      (dir==='v2g'?drawGraph:drawVessel)(ctx,150,o.prof);
+      div.appendChild(c);
+      const l=document.createElement('div');l.className='optlab';l.textContent=String.fromCharCode(65+idx);
+      div.appendChild(l);
+      div.addEventListener('click',()=>choose(idx,div));
+      div.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(idx,div);}});
+      wrap.appendChild(div);
+    });
+    $('#f-fb').className='feedback';
+  }
+  function choose(idx,div){
+    if(locked)return; locked=true;
+    const opts=$$('#f-opts .option');
+    opts.forEach(o=>o.classList.add('locked'));
+    const fb=$('#f-fb');
+    if(idx===answerIdx){
+      stats.ok++;stats.streak++;
+      div.classList.add('correct');
+      fb.className='feedback ok show';
+      fb.innerHTML=`<b>Richtig!</b> ${cur.answer.explain}`;
+    }else{
+      stats.wrong++;stats.streak=0;
+      div.classList.add('wrong');
+      opts[answerIdx].classList.add('correct');
+      fb.className='feedback no show';
+      fb.innerHTML=`<b>Nicht richtig.</b> Lösung ist <b>${String.fromCharCode(65+answerIdx)}</b>. ${cur.answer.explain}`;
+      pushMiss(misses, $('#f-miss'), $('#f-mlist'), $('#f-mc'),
+        missItem(escHF($('#f-prompt').textContent), 'Auswahl '+String.fromCharCode(65+idx),
+          'Richtig: <b>Auswahl '+String.fromCharCode(65+answerIdx)+'</b> – '+escHF(cur.answer.explain)));
+    }
+    $('#f-ok').textContent=stats.ok;$('#f-no').textContent=stats.wrong;$('#f-streak').textContent='Serie: '+stats.streak+' 🔥';
+    if(stats.streak>maxStreak)maxStreak=stats.streak; setProg('f-prog',stats.ok+stats.wrong);
+  }
+  $('#f-next').addEventListener('click',newQ);
+  $('#f-eval').addEventListener('click',()=>{const tot=stats.ok+stats.wrong;if(!tot){$('#f-prog').textContent='Bitte zuerst Aufgaben lösen.';return;}showProtocol({app:'Funktionen und Grössen',tool:'Füllgraphen von Gefässen',total:tot,correct:stats.ok,wrong:stats.wrong,maxStreak:maxStreak,byDiff:null,misses:misses});});
+  $('#f-reset').addEventListener('click',()=>{stats={ok:0,wrong:0,streak:0};misses=[];maxStreak=0;$('#f-ok').textContent='0';$('#f-no').textContent='0';$('#f-streak').textContent='Serie: 0 🔥';$('#f-mlist').innerHTML='';$('#f-mc').textContent='0';$('#f-miss').hidden=true;$('#f-prog').textContent='Noch keine Aufgabe in dieser Serie.';newQ();});
+  newQ();
+})();
+
+/* ---- Füllgraphen: Generator ---- */
+(function(){
+  const host=$('#fuell-gen');
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="eyebrow">Arbeitsblatt «Gefässe füllen»</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>Serie / Bezeichnung</label>
+          <input class="opt" id="fg-serie" value="Serie 1">
+          <label style="margin-top:8px">Anzahl Gefässe/Graphen</label>
+          <input class="opt" id="fg-count" type="number" min="4" max="8" value="6">
+        </div>
+        <div class="field">
+          <label>Aufgabentyp</label>
+          <div class="checks" id="fg-mode">
+            <label><input type="radio" name="fgmode" value="graph" checked> Gefässe gegeben – Graph zeichnen</label>
+            <label><input type="radio" name="fgmode" value="gefaess"> Graphen gegeben – Gefäss zeichnen</label>
+            <label><input type="radio" name="fgmode" value="match"> Graphen &amp; Gefässe gegeben – zuordnen</label>
+            <label><input type="radio" name="fgmode" value="vermischt"> Vermischte Aufgaben</label>
+          </div>
+        </div>
+      </div>
+      <div class="gen-actions">
+        <button class="btn btn-primary" id="fg-make">PDF mit Aufgaben &amp; Lösungen erstellen</button>
+        <span class="gen-note">Gefässe und Graphen werden als Grafik gezeichnet.</span>
+      </div>
+    </div>`;
+  $('#fg-make').addEventListener('click',()=>{
+    const n=Math.max(4,Math.min(8,+$('#fg-count').value||6));
+    const mode=($$('#fg-mode input:checked')[0]||{}).value||'graph';
+    // je Familie höchstens eine Form -> eindeutige Zuordnung
+    const seen={}, ids=[];
+    for(const id of shuffle(ARCH_IDS)){ if(seen[ARCH_FAM[id]]) continue; seen[ARCH_FAM[id]]=1; ids.push(id); if(ids.length===n) break; }
+    while(ids.length<n){ const id=pick(ARCH_IDS); if(!ids.includes(id)) ids.push(id); }
+    const profiles=shuffle(ids).map(makeProfile);
+    buildFuellPDF({serie:$('#fg-serie').value.trim(),profiles,mode});
+  });
+})();
+/* ============================================================
+   5) KOORDINATENSYSTEM
+============================================================ */
+// Figuren-Bibliothek: geordnete Streckenzüge mit ganzzahligen Punkten
+/*SHARED-START*/
+const KFIGUREN = [
+  {name:'Tannenbaum', closed:true, pts:[[0,6],[-2,5],[-1,5],[-3,3],[-1,3],[-4,1],[-1,1],[-1,-1],[1,-1],[1,1],[4,1],[1,3],[3,3],[1,5],[2,5]]},
+  {name:'Haus', closed:true, pts:[[-3,-2],[3,-2],[3,2],[0,5],[-3,2]]},
+  {name:'Pfeil nach rechts', closed:true, pts:[[-4,1],[1,1],[1,3],[4,0],[1,-3],[1,-1],[-4,-1]]},
+  {name:'Rakete', closed:true, pts:[[0,6],[2,2],[2,-2],[3,-4],[1,-2],[-1,-2],[-3,-4],[-2,-2],[-2,2]]},
+  {name:'Segelboot', closed:false, pts:[[-4,-1],[4,-1],[3,-3],[-3,-3],[-4,-1],[0,-1],[0,4],[3,0],[0,0]]},
+  {name:'Drache', closed:true, pts:[[0,5],[3,0],[0,-5],[-3,0]]},
+  {name:'Herzchen', closed:true, pts:[[0,-3],[-3,0],[-3,2],[-2,3],[0,2],[2,3],[3,2],[3,0]]},
+  {name:'Buchstabe A', closed:false, pts:[[-3,-4],[0,4],[3,-4],[2,-1],[-2,-1]]},
+];
+function koordBounds(diff){
+  if(diff===1) return {minX:-5,maxX:5,minY:-5,maxY:5,step:1};
+  if(diff===2) return {minX:-8,maxX:8,minY:-8,maxY:8,step:1};
+  return {minX:-10,maxX:10,minY:-10,maxY:10,step:2};
+}
+function randPoint(b){ let x,y; do{ x=ri(b.minX,b.maxX); y=ri(b.minY,b.maxY);}while(x===0&&y===0); return {x,y}; }
+function quadrantOf(x,y){
+  if(x===0&&y===0) return 'Ursprung';
+  if(x===0) return 'y-Achse'; if(y===0) return 'x-Achse';
+  if(x>0&&y>0) return 'I'; if(x<0&&y>0) return 'II'; if(x<0&&y<0) return 'III'; return 'IV';
+}
+function figBounds(pts){
+  const xs=pts.map(p=>p[0]), ys=pts.map(p=>p[1]);
+  const R=Math.max(Math.abs(Math.min(...xs)),Math.abs(Math.max(...xs)),Math.abs(Math.min(...ys)),Math.abs(Math.max(...ys)))+1;
+  return {minX:-R,maxX:R,minY:-R,maxY:R,step:R>7?2:1};
+}
+// Zeichnet ein Koordinatensystem in einen Canvas-Kontext; gibt Umrechnungsfunktionen zurück
+function drawCoordCanvas(ctx,size,b,marks,opts){
+  opts=opts||{}; marks=marks||[];
+  const labelStep=opts.labelStep||b.step||1, pad=size*0.12;
+  const ux=(size-2*pad)/(b.maxX-b.minX), uy=(size-2*pad)/(b.maxY-b.minY);
+  const toPx=(x,y)=>[pad+(x-b.minX)*ux, size-pad-(y-b.minY)*uy];
+  const toCoord=(px,py)=>[Math.round((px-pad)/ux)+b.minX, Math.round((size-pad-py)/uy)+b.minY];
+  ctx.clearRect(0,0,size,size);
+  ctx.lineCap='round';ctx.lineJoin='round';
+  // Gitter
+  ctx.strokeStyle='#e2e8f4'; ctx.lineWidth=Math.max(1,size*0.003);
+  for(let x=b.minX;x<=b.maxX;x++){const a=toPx(x,b.minY),c=toPx(x,b.maxY);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(c[0],c[1]);ctx.stroke();}
+  for(let y=b.minY;y<=b.maxY;y++){const a=toPx(b.minX,y),c=toPx(b.maxX,y);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(c[0],c[1]);ctx.stroke();}
+  const axX=(b.minX<=0&&b.maxX>=0)?0:b.minX, axY=(b.minY<=0&&b.maxY>=0)?0:b.minY;
+  function arrow(x1,y1,x2,y2){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
+    const a=Math.atan2(y2-y1,x2-x1),h=size*0.022;
+    ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x2-h*Math.cos(a-0.4),y2-h*Math.sin(a-0.4));
+    ctx.moveTo(x2,y2);ctx.lineTo(x2-h*Math.cos(a+0.4),y2-h*Math.sin(a+0.4));ctx.stroke();}
+  ctx.strokeStyle='#6b7c9c'; ctx.lineWidth=Math.max(1.2,size*0.006);
+  const xL=toPx(b.minX,axY), xR=toPx(b.maxX,axY); arrow(xL[0],xL[1],xR[0]+size*0.03,xR[1]);
+  const yB=toPx(axX,b.minY), yT=toPx(axX,b.maxY); arrow(yB[0],yB[1],yT[0],yT[1]-size*0.03);
+  // Beschriftung
+  ctx.fillStyle='#3a4a68'; ctx.font=(size*0.036)+'px system-ui,Arial,sans-serif';
+  ctx.textAlign='center'; ctx.textBaseline='top';
+  for(let x=b.minX;x<=b.maxX;x++){ if(x===0||x%labelStep) continue; const [px,py]=toPx(x,axY);
+    ctx.strokeStyle='#6b7c9c';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(px,py-size*0.008);ctx.lineTo(px,py+size*0.008);ctx.stroke();
+    ctx.fillText(String(x),px,py+size*0.013); }
+  ctx.textAlign='right'; ctx.textBaseline='middle';
+  for(let y=b.minY;y<=b.maxY;y++){ if(y===0||y%labelStep) continue; const [px,py]=toPx(axX,y);
+    ctx.strokeStyle='#6b7c9c';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(px-size*0.008,py);ctx.lineTo(px+size*0.008,py);ctx.stroke();
+    ctx.fillText(String(y),px-size*0.016,py); }
+  // Achsennamen
+  ctx.fillStyle='#15305c'; ctx.font='italic '+(size*0.05)+'px Georgia,serif';
+  ctx.textAlign='left';ctx.textBaseline='middle';
+  ctx.fillText('x', xR[0]+size*0.04, xR[1]+size*0.03);
+  ctx.fillText('y', yT[0]+size*0.03, yT[1]-size*0.02);
+  // Verbindungslinie (Figuren)
+  if(opts.connect && marks.length>1){
+    ctx.strokeStyle=opts.connectColor||'#7b53c9'; ctx.lineWidth=size*0.009;
+    ctx.beginPath(); marks.forEach((m,i)=>{const [px,py]=toPx(m.x,m.y); i?ctx.lineTo(px,py):ctx.moveTo(px,py);});
+    if(opts.closed){const [px,py]=toPx(marks[0].x,marks[0].y);ctx.lineTo(px,py);}
+    ctx.stroke();
+  }
+  // Punkte
+  marks.forEach(m=>{ const [px,py]=toPx(m.x,m.y);
+    ctx.fillStyle=m.color||'#d5473e'; ctx.beginPath(); ctx.arc(px,py,size*0.016,0,7); ctx.fill();
+    if(m.label){ ctx.fillStyle='#15305c'; ctx.font='bold '+(size*0.042)+'px system-ui,Arial,sans-serif';
+      ctx.textAlign='left';ctx.textBaseline='bottom'; ctx.fillText(m.label,px+size*0.02,py-size*0.012); }
+  });
+  return {toPx,toCoord};
+}
+/*SHARED-END*/
+/*EXAMAPI-START*/
+/* ============================================================================
+   EXAM_API  –  Adapter fuer den Pruefungsmodus im Hub.
+   Liefert EXAKT dieselben Aufgaben wie die Uebungen dieser App
+   (gleiche Generatoren, gleicher Wortlaut, gleiche Grafiken).
+============================================================================ */
+var EXAM_API=(function(){
+  var SUB_G='Grössen umrechnen', SUB_D='Direkte Proportionalität',
+      SUB_I='Indirekte Proportionalität', SUB_F='Füllgraphen von Gefässen',
+      SUB_K='Koordinatensystem';
+
+  function propTask(t,sub){
+    return {sub:sub,answerType:'text',promptHTML:escHF(t.text),unit:t.ansUnit,placeholder:'Ergebnis',inputMode:'decimal',
+      accept:function(v){var x=parseNum(v);if(isNaN(x))return false;
+        return approx(x,t.answer)||(t.needCeil&&Math.round(x)===Math.ceil(t.answer));},
+      answerText:fmtCH(t.needCeil?Math.ceil(t.answer):t.answer)+' '+t.ansUnit,
+      solutionHTML:zweisatzHTML(t),
+      pdfQ:t.text,pdfSol:zweisatzLines(t)};
+  }
+
+  function groessen(diff){
+    var t=genGroessen(Object.keys(GROESSEN),diff);
+    return {sub:SUB_G+' · '+t.cat,answerType:'text',promptHTML:escHF(t.prompt),unit:t.unit,
+      placeholder:'Ergebnis',inputMode:'decimal',
+      accept:function(v){var x=parseNum(v);return !isNaN(x)&&approx(x,t.answer);},
+      answerText:fmtCH(t.answer)+' '+t.unit,
+      solutionHTML:'<span class="sol">'+escHF(t.line)+'</span>',
+      pdfQ:t.text,pdfSol:t.line};
+  }
+
+  function fuell(diff){
+    var dir=Math.random()<0.5?'v2g':'g2v', ansId=pick(ARCH_IDS), answer=makeProfile(ansId);
+    var pool=ARCH_IDS.filter(function(x){return x!==ansId&&ARCH_FAM[x]!==ARCH_FAM[ansId];});
+    var distIds=shuffle(pool).slice(0,3);
+    if(distIds.length<3){
+      distIds=distIds.concat(shuffle(ARCH_IDS.filter(function(x){
+        return x!==ansId&&distIds.indexOf(x)<0;})).slice(0,3-distIds.length));
+    }
+    var opts=shuffle([answer].concat(distIds.map(makeProfile))), ai=opts.indexOf(answer);
+    var dStim=(dir==='v2g')?drawVessel:drawGraph, dOpt=(dir==='v2g')?drawGraph:drawVessel;
+    function mkDraw(p){return function(c,s){dOpt(c,s,p.prof);};}
+    return {sub:SUB_F,answerType:'mc',
+      stim:function(c,s){dStim(c,s,answer.prof);},stimSize:190,
+      stimLabel:(dir==='v2g')?'Gefäss':'Graph',
+      promptHTML:(dir==='v2g')?'Welcher Füllgraph passt zu diesem Gefäss?'
+                              :'Welches Gefäss passt zu diesem Füllgraphen?',
+      options:opts.map(function(o,i){return {draw:mkDraw(o),size:150,correct:i===ai};}),
+      answerText:String.fromCharCode(65+ai),
+      solutionHTML:'Richtig ist <b>'+String.fromCharCode(65+ai)+'</b>. '+answer.explain,
+      pdfQ:(dir==='v2g')?'Welcher Füllgraph passt zum abgebildeten Gefäss?'
+                        :'Welches Gefäss passt zum abgebildeten Füllgraphen?',
+      pdfSol:String.fromCharCode(65+ai)+' – '+answer.explain,
+      pdfImg:{draw:function(c,s){dStim(c,s,answer.prof);},w:32,ratio:1},
+      pdfOpts:opts.map(function(o){return {draw:mkDraw(o),ratio:1};})};
+  }
+
+  function koordDraw(b,marks){return function(c,s){drawCoordCanvas(c,s,b,marks||[],{});};}
+
+  function koord(diff){
+    var mode=pick(['ablesen','einzeichnen','quadrant']);
+    var b=koordBounds(diff), p=randPoint(b);
+    var pm=[{x:p.x,y:p.y,label:'P',color:'#C0392B'}];
+    if(mode==='ablesen'){
+      return {sub:SUB_K,answerType:'text',
+        stim:koordDraw(b,pm),stimSize:300,
+        promptHTML:'Lies die Koordinaten des Punktes P ab und notiere sie in der Klammer. '+
+                   '<span class="hintdim">(z. B. 3 / -2)</span>',
+        placeholder:'z. B. 3 / -2',
+        accept:function(v){var n=(String(v).match(/-?\d+/g)||[]).map(Number);
+          return n.length>=2&&n[0]===p.x&&n[1]===p.y;},
+        answerText:'P ( '+p.x+' / '+p.y+' )',
+        solutionHTML:'Richtig ist <b>P ( '+p.x+' / '+p.y+' )</b>.',
+        pdfQ:'Lies die Koordinaten des Punktes P ab:  P ( ____ / ____ )',
+        pdfSol:'P ( '+p.x+' / '+p.y+' )',
+        pdfImg:{draw:koordDraw(b,pm),w:52,ratio:1}};
+    }
+    if(mode==='quadrant'){
+      var qd=quadrantOf(p.x,p.y), axis=(qd==='x-Achse'||qd==='y-Achse'||qd==='Ursprung');
+      var want=axis?'auf einer Achse':qd, labs=['I','II','III','IV','auf einer Achse'];
+      return {sub:SUB_K,answerType:'buttons',
+        stim:koordDraw(b,pm),stimSize:300,
+        promptHTML:'In welchem Quadranten liegt P ( '+p.x+' / '+p.y+' )?',
+        options:labs.map(function(o){return {label:o,correct:o===want};}),
+        answerText:want,
+        solutionHTML:'Richtig: <b>'+want+'</b>'+(axis?' ('+qd+')':'')+'.',
+        pdfQ:'In welchem Quadranten liegt P ( '+p.x+' / '+p.y+' )?',
+        pdfSol:want+(axis?' ('+qd+')':''),
+        pdfImg:{draw:koordDraw(b,pm),w:52,ratio:1}};
+    }
+    return {sub:SUB_K,answerType:'custom',
+      promptHTML:'Zeichne den Punkt P ( '+p.x+' / '+p.y+' ) ein – klicke die richtige Stelle im Gitter an.',
+      mount:function(host,done){
+        var mk=makeCanvas(300), map=drawCoordCanvas(mk.ctx,300,b,[],{});
+        mk.c.style.cursor='crosshair'; host.appendChild(mk.c);
+        mk.c.addEventListener('click',function(ev){
+          var r=mk.c.getBoundingClientRect();
+          var px=(ev.clientX-r.left)*(300/r.width), py=(ev.clientY-r.top)*(300/r.height);
+          var g=map.toCoord(px,py), ok=(g[0]===p.x&&g[1]===p.y);
+          var marks=[{x:g[0],y:g[1],label:'dein Punkt',color:ok?'#1E7454':'#C0392B'}];
+          if(!ok)marks.push({x:p.x,y:p.y,label:'P',color:'#1E7454'});
+          var mk2=makeCanvas(300); drawCoordCanvas(mk2.ctx,300,b,marks,{});
+          host.replaceChild(mk2.c,mk.c);
+          done(ok,'( '+g[0]+' / '+g[1]+' )');
+        },{once:true});
+      },
+      answerText:'P ( '+p.x+' / '+p.y+' )',
+      solutionHTML:'Der Punkt P liegt bei <b>( '+p.x+' / '+p.y+' )</b>.',
+      pdfQ:'Zeichne den Punkt P ( '+p.x+' / '+p.y+' ) in das Gitter ein.',
+      pdfSol:'P ( '+p.x+' / '+p.y+' )',
+      pdfImg:{draw:koordDraw(b,[]),w:52,ratio:1},
+      pdfImgSol:{draw:koordDraw(b,[{x:p.x,y:p.y,label:'P',color:'#C0392B'}]),w:42,ratio:1}};
+  }
+
+  return {
+    groessen:groessen,
+    direkt:function(d){return propTask(directTask(d),SUB_D);},
+    indirekt:function(d){return propTask(inverseTask(d),SUB_I);},
+    fuell:fuell,
+    koordinaten:koord
+  };
+})();
+/*EXAMAPI-END*/
+
+/* ---- Koordinaten: Üben ---- */
+(function(){
+  const host=$('#koord-uebn'); if(!host) return;
+  let mode='ablesen', diff=1, stats={ok:0,wrong:0,streak:0}, cur=null, map=null, locked=false, misses=[], agg=newDiffAgg(), maxStreak=0, lastSig='';
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="sheet-head">
+        <div class="scoreline"><span>Richtig: <b id="k-ok">0</b></span><span>Falsch: <b id="k-no" class="p-no">0</b></span><span class="streak" id="k-streak">Serie: 0 🔥</span></div>
+        <button class="btn btn-ghost" id="k-next">Nächste Aufgabe</button>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px">
+        <span class="gen-note">Modus:</span>
+        <span class="pill-diff" id="k-mode"><button data-m="ablesen" class="active">Ablesen</button><button data-m="einzeichnen">Einzeichnen</button><button data-m="quadrant">Quadrant</button></span>
+        <span class="gen-note" style="margin-left:6px">Bereich:</span>
+        <span class="pill-diff" id="k-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+      </div>
+      <p class="qsub" id="k-prompt"></p>
+      <div class="stimulus" id="k-canvas" style="justify-content:center"></div>
+      <div id="k-controls" style="margin-top:10px"></div>
+      <div class="feedback" id="k-fb"></div>
+      ${serieBarHTML('k')}
+    </div>
+    <details class="misslog" id="k-miss" hidden><summary>Gemachte Fehler (<span id="k-mc">0</span>)</summary><div id="k-mlist"></div></details>`;
+  const el=id=>$('#'+id);
+  el('k-mode').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;mode=b.dataset.m;$$('#k-mode button').forEach(x=>x.classList.toggle('active',x===b));next();});
+  el('k-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#k-diff button').forEach(x=>x.classList.toggle('active',x===b));next();});
+  el('k-next').addEventListener('click',next);
+  el('k-eval').addEventListener('click',()=>{const tot=stats.ok+stats.wrong;if(!tot){el('k-prog').textContent='Bitte zuerst Aufgaben lösen.';return;}showProtocol({app:'Funktionen und Grössen',tool:'Koordinatensystem',total:tot,correct:stats.ok,wrong:stats.wrong,maxStreak:maxStreak,byDiff:agg,misses:misses});});
+  el('k-reset').addEventListener('click',()=>{stats={ok:0,wrong:0,streak:0};misses=[];maxStreak=0;agg=newDiffAgg();el('k-ok').textContent='0';el('k-no').textContent='0';el('k-streak').textContent='Serie: 0 🔥';el('k-mlist').innerHTML='';el('k-mc').textContent='0';el('k-miss').hidden=true;el('k-prog').textContent='Noch keine Aufgabe in dieser Serie.';next();});
+  function drawStage(marks,opts){ const h=el('k-canvas'); h.innerHTML=''; const {c,ctx}=makeCanvas(300); map=drawCoordCanvas(ctx,300,cur.b,marks||[],opts||{}); h.appendChild(c); return c; }
+  function score(ok){ if(ok){stats.ok++;stats.streak++;}else{stats.wrong++;stats.streak=0;} aggRecord(agg,diff,ok); if(stats.streak>maxStreak)maxStreak=stats.streak; el('k-ok').textContent=stats.ok;el('k-no').textContent=stats.wrong;el('k-streak').textContent='Serie: '+stats.streak+' 🔥'; setProg('k-prog',stats.ok+stats.wrong); }
+  function kMiss(qt,u,c){ pushMiss(misses, el('k-miss'), el('k-mlist'), el('k-mc'), missItem(escHF(qt), escHF(u), c)); }
+  function next(){
+    locked=false; el('k-fb').className='feedback'; el('k-controls').innerHTML='';
+    const b=koordBounds(diff); cur={b}; var p,_t=0,_s;do{p=randPoint(b);_s=mode+':'+p.x+','+p.y;_t++;}while(_s===lastSig&&_t<12);lastSig=_s; cur.p=p;
+    if(mode==='ablesen'){
+      el('k-prompt').textContent='Lies die Koordinaten des Punktes P ab und notiere sie in der Klammer.';
+      drawStage([{x:p.x,y:p.y,label:'P',color:'#d5473e'}]);
+      el('k-controls').innerHTML='<span style="font-family:var(--serif);font-size:18px">P (&nbsp;</span><input id="k-in" class="opt" style="width:150px" placeholder="z. B. 3 / -2"><span style="font-family:var(--serif);font-size:18px">&nbsp;)</span> &nbsp; <button class="btn btn-green" id="k-check">Kontrollieren</button>';
+      el('k-check').addEventListener('click',checkAblesen);
+      el('k-in').addEventListener('keydown',ev=>{if(ev.key==='Enter')checkAblesen();});
+      el('k-in').focus();
+    } else if(mode==='einzeichnen'){
+      el('k-prompt').textContent='Zeichne den Punkt P( '+p.x+' / '+p.y+' ) ein – klicke die richtige Stelle im Gitter an.';
+      const c=drawStage([]); c.style.cursor='crosshair';
+      c.addEventListener('click',ev=>{
+        if(locked)return; locked=true;
+        const r=c.getBoundingClientRect();
+        const px=(ev.clientX-r.left)*(300/r.width), py=(ev.clientY-r.top)*(300/r.height);
+        const [gx,gy]=map.toCoord(px,py); const ok=(gx===p.x&&gy===p.y);
+        const marks=[{x:gx,y:gy,label:'dein Punkt',color:ok?'#2f9e5f':'#d5473e'}];
+        if(!ok) marks.push({x:p.x,y:p.y,label:'P',color:'#2f9e5f'});
+        drawStage(marks); score(ok);
+        el('k-fb').className='feedback '+(ok?'ok':'no')+' show';
+        el('k-fb').innerHTML= ok?'<b>Richtig!</b> P( '+p.x+' / '+p.y+' )':'<b>Nicht ganz.</b> Du hast ( '+gx+' / '+gy+' ) markiert – richtig ist P( '+p.x+' / '+p.y+' ).';
+        if(!ok) kMiss('Punkt P( '+p.x+' / '+p.y+' ) einzeichnen','( '+gx+' / '+gy+' )','Richtig: <b>P( '+p.x+' / '+p.y+' )</b>');
+      });
+    } else {
+      el('k-prompt').textContent='In welchem Quadranten liegt P( '+p.x+' / '+p.y+' )?';
+      drawStage([{x:p.x,y:p.y,label:'P',color:'#d5473e'}]);
+      const q=quadrantOf(p.x,p.y), axis=(q==='x-Achse'||q==='y-Achse'||q==='Ursprung'), want=axis?'auf einer Achse':q;
+      const wrap=document.createElement('div'); wrap.style.display='flex'; wrap.style.flexWrap='wrap'; wrap.style.gap='8px';
+      ['I','II','III','IV','auf einer Achse'].forEach(o=>{ const btn=document.createElement('button'); btn.className='btn btn-ghost'; btn.textContent=o;
+        btn.addEventListener('click',()=>{ if(locked)return; locked=true; const ok=(o===want); score(ok);
+          el('k-fb').className='feedback '+(ok?'ok':'no')+' show';
+          el('k-fb').innerHTML= ok?'<b>Richtig!</b> '+(axis?'Der Punkt liegt auf einer Achse.':'Quadrant '+q+'.'):'<b>Nicht ganz.</b> Richtig: '+want+(axis?' ('+q+')':'')+'.';
+          if(!ok) kMiss('In welchem Quadranten liegt P( '+p.x+' / '+p.y+' )?', o, 'Richtig: <b>'+want+(axis?' ('+q+')':'')+'</b>');
+        }); wrap.appendChild(btn); });
+      el('k-controls').appendChild(wrap);
+    }
+  }
+  function checkAblesen(){
+    if(locked)return;
+    const nums=(el('k-in').value.match(/-?\d+/g)||[]).map(Number);
+    if(nums.length<2) return;
+    locked=true;
+    const ok=(nums[0]===cur.p.x && nums[1]===cur.p.y); score(ok);
+    if(!ok) drawStage([{x:cur.p.x,y:cur.p.y,label:'P',color:'#2f9e5f'}]);
+    el('k-fb').className='feedback '+(ok?'ok':'no')+' show';
+    el('k-fb').innerHTML= ok?'<b>Richtig!</b> P( '+cur.p.x+' / '+cur.p.y+' )':'<b>Nicht ganz.</b> Richtig ist P( '+cur.p.x+' / '+cur.p.y+' ).';
+    if(!ok) kMiss('Koordinaten des Punktes P ablesen','( '+nums[0]+' / '+nums[1]+' )','Richtig: <b>P( '+cur.p.x+' / '+cur.p.y+' )</b>');
+  }
+  next();
+})();
+
+/* ---- Koordinaten: Generator ---- */
+(function(){
+  const host=$('#koord-gen'); if(!host) return;
+  host.innerHTML=`
+    <div class="sheet">
+      <div class="eyebrow">Arbeitsblatt «Koordinatensystem»</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>Aufgabentyp</label>
+          <div class="checks" id="kg-type">
+            <label><input type="radio" name="kgtype" value="ablesen" checked> Koordinaten ablesen</label>
+            <label><input type="radio" name="kgtype" value="einzeichnen"> Punkte einzeichnen</label>
+            <label><input type="radio" name="kgtype" value="figur"> Figur zeichnen (Punkte verbinden)</label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Serie / Bezeichnung</label>
+          <input class="opt" id="kg-serie" value="Serie 1">
+          <label style="margin-top:8px">Anzahl Punkte <span class="gen-note">(Ablesen / Einzeichnen)</span></label>
+          <input class="opt" id="kg-count" type="number" min="4" max="12" value="8">
+          <label style="margin-top:8px">Bereich</label>
+          <span class="pill-diff" id="kg-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+        </div>
+      </div>
+      <div class="gen-actions">
+        <button class="btn btn-primary" id="kg-make">PDF mit Aufgaben &amp; Lösungen erstellen</button>
+        <span class="gen-note">Das Koordinatensystem wird als Grafik gezeichnet.</span>
+      </div>
+    </div>`;
+  let diff=1;
+  $('#kg-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#kg-diff button').forEach(x=>x.classList.toggle('active',x===b));});
+  $('#kg-make').addEventListener('click',()=>{
+    const type=($$('#kg-type input:checked')[0]||{}).value||'ablesen';
+    const n=Math.max(4,Math.min(12,+$('#kg-count').value||8));
+    buildKoordPDF({type,serie:$('#kg-serie').value.trim(),n,diff});
+  });
+})();
+
+/* ============================================================
+   PDF-ERZEUGUNG (jsPDF)
+============================================================ */
+function asciiPDF(s){
+  // Nur Zeichen ersetzen, die die PDF-Standardschrift NICHT kennt.
+  // ² ³ · « » ä ö ü … sind in WinAnsi enthalten und werden echt dargestellt.
+  return String(s)
+    .replace(/≙/g,'=')        // ≙ (entspricht) -> =
+    .replace(/−/g,'-')      // − (Minuszeichen) -> Bindestrich
+    .replace(/[   ]/g,' ')  // schmale Leerzeichen -> normales Leerzeichen
+    .replace(/→/g,'->')       // → (nicht in WinAnsi)
+    .replace(/[–—]/g,'-');// – — -> -
+}
+function jspdfDoc(){
+  if(!window.jspdf){ alert('PDF-Bibliothek konnte nicht geladen werden. Bitte Internetverbindung prüfen und Seite neu laden.'); return null; }
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:'mm',format:'a4'});
+  const _t=doc.text.bind(doc);
+  doc.text=function(txt,...rest){
+    txt = Array.isArray(txt) ? txt.map(asciiPDF) : asciiPDF(txt);
+    return _t(txt,...rest);
+  };
+  return doc;
+}
+const M=18, PW=210, PH=297, CW=PW-2*M;
+const BOTTOM=PH-14; // unterste nutzbare Höhe für Inhalt (Fusszeile bei PH-8)
+
+function pdfHeader(doc,subject,rightTag){
+  doc.setFont('times','normal'); doc.setFontSize(10.5); doc.setTextColor(0,0,0);
+  doc.text('Mathematik', M, M);
+  doc.setFont('times','italic');
+  doc.text('«'+subject+'»', PW/2, M, {align:'center'});
+  doc.setFont('times','normal');
+  doc.text(rightTag, PW-M, M, {align:'right'});
+  doc.setDrawColor(0,0,0); doc.setLineWidth(0.5); doc.line(M, M+2.5, PW-M, M+2.5); // 1. Linie (unter Kopfzeile)
+}
+// Einheitlicher Titelblock: zentrierter Titel + Meta, darunter die 2. schwarze Linie
+function titleBlock(doc,title,metaLines){
+  let y=M+13;
+  doc.setFont('times','bold'); doc.setFontSize(15); doc.setTextColor(0,0,0);
+  doc.text(title, PW/2, y, {align:'center'}); y+=5;
+  doc.setFont('times','normal'); doc.setFontSize(10); doc.setTextColor(0,0,0);
+  (metaLines||[]).filter(Boolean).forEach(l=>{ doc.text(l, PW/2, y, {align:'center'}); y+=4.6; });
+  y+=1.5;
+  doc.setDrawColor(0,0,0); doc.setLineWidth(0.5); doc.line(M, y, PW-M, y); // 2. Linie (unter Titel)
+  return y+6;
+}
+function ensureSpace(doc,y,need){ if(y+need>PH-16){doc.addPage();return M+6;} return y; }
+
+/* ---- Grössen-PDF ---- */
+function buildGroessenPDF({serie,themes,diff,tasks}){
+  const doc=jspdfDoc(); if(!doc)return;
+  const meta=[`Themen: ${themes}`];
+  const n=tasks.length;
+  const cols = n<=24?2:3;
+  const rowMin=6.2, rowMax=11;
+  function renderPages(entries,isSolution){
+    if(isSolution) doc.addPage();
+    pdfHeader(doc,'Grössen',isSolution?'AB · Lösungen':'AB');
+    let y=titleBlock(doc,(isSolution?'Lösungen · ':'')+'Grössen umrechnen'+(serie?' – '+serie:''),meta);
+    doc.setFont('times','normal');doc.setFontSize(11.5);doc.setTextColor(0,0,0);
+    doc.text(isSolution?'Lösungen zu den Umrechnungen.':'Rechne die folgenden Grössen in die angegebene Einheit um.',M,y); y+=8;
+    const firstAvail=BOTTOM-y, contAvail=BOTTOM-(M+6);
+    const perPageFirst=Math.max(cols,Math.floor(firstAvail/rowMax)*cols);
+    const pages=Math.max(1,Math.ceil(entries.length/perPageFirst));
+    const perPageActual=Math.ceil(entries.length/pages);
+    let idx=0;
+    for(let p=0;p<pages;p++){
+      const chunk=entries.slice(idx,idx+perPageActual);
+      if(p>0){ doc.addPage(); pdfHeader(doc,'Grössen',isSolution?'AB · Lösungen':'AB'); y=M+6; }
+      const avail=p===0?firstAvail:contAvail;
+      const rows=Math.ceil(chunk.length/cols);
+      const rowH=Math.min(rowMax*1.35,Math.max(rowMin,avail/rows));
+      const fs=Math.min(12,Math.max(8.2,rowH*1.02));
+      gridEntries(doc,y,chunk,{cols,rowH,fs});
+      idx+=chunk.length;
+    }
+  }
+  renderPages(tasks.map((t,i)=>({n:i+1,text:t.text})),false);
+  renderPages(tasks.map((t,i)=>({n:i+1,text:t.line})),true);
+  doc.save('Groessen_umrechnen_'+(serie||'Serie').replace(/\s+/g,'_')+'.pdf');
+}
+function groessenLayout(n, availH){
+  const cols = n<=24?2:3;
+  const rows = Math.ceil(n/cols);
+  const rowH = Math.min(11, Math.max(6.2, availH/rows));
+  const fs   = Math.min(12, Math.max(8.2, rowH*1.02));
+  return {cols,rows,rowH,fs};
+}
+function gridEntries(doc,yStart,entries,cfg){
+  const {cols,rowH,fs}=cfg, colW=CW/cols;
+  entries.forEach((e,idx)=>{
+    const col=idx%cols, row=Math.floor(idx/cols);
+    const x=M+col*colW, yy=yStart+row*rowH+rowH*0.72;
+    doc.setFontSize(fs);
+    doc.setFont('times','bold');doc.setTextColor(0,0,0);
+    doc.text(e.n+')',x,yy);
+    doc.setFont('times','normal');doc.setTextColor(0,0,0);
+    doc.text(e.text,x+(fs>=11?8:6.5),yy);
+  });
+}
+
+/* ---- Proportionalitäts-PDF ---- */
+// Verteilt Einträge variabler Höhe gleichmässig über die minimal nötige Seitenzahl,
+// statt sie gierig auf die erste Seite zu packen (verhindert fast leere Restseiten).
+function packBalanced(entries,firstAvail,contAvail,buffer){
+  function greedyCount(){
+    let cnt=1,curH=0,avail=firstAvail;
+    for(const e of entries){
+      if(curH>0 && curH+e.h+buffer>avail){ cnt++; curH=0; avail=contAvail; }
+      curH+=e.h;
+    }
+    return cnt;
+  }
+  const pages=Math.max(1,greedyCount());
+  const avails=Array.from({length:pages},(_,i)=>i===0?firstAvail:contAvail);
+  const totalAvail=avails.reduce((a,b)=>a+b,0);
+  const totalH=entries.reduce((s,e)=>s+e.h,0);
+  const fillRatio=totalAvail>0?Math.min(1,totalH/totalAvail):1;
+  const targets=avails.map(a=>a*fillRatio);
+  const result=[]; let pi=0,curH=0,cur=[];
+  entries.forEach(e=>{
+    const willOverflow=cur.length&&(curH+e.h+buffer>avails[pi]);
+    const reachedTarget=cur.length&&curH>=targets[pi]&&pi<pages-1;
+    if(willOverflow||reachedTarget){
+      result.push({entries:cur,avail:avails[pi]});
+      pi=Math.min(pi+1,avails.length-1); cur=[]; curH=0;
+    }
+    cur.push(e); curH+=e.h;
+  });
+  if(cur.length) result.push({entries:cur,avail:avails[pi]});
+  return result;
+}
+function buildPropPDF({serie,title,diff,tasks}){
+  const doc=jspdfDoc(); if(!doc)return;
+  pdfHeader(doc,'Funktionen','Grundaufgaben AB');
+  let y=titleBlock(doc,title+(serie?' – '+serie:''),[]);
+  doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+  const intro='Löse die folgenden Aufgaben mit dem Zweisatz als Lösungsweg. Achte auf eine saubere und übersichtliche Darstellung.';
+  const il=doc.splitTextToSize(intro,CW); doc.text(il,M,y); y+=il.length*5.4+7;
+
+  const fs=11, lineH=fs*0.46+0.9, gapMax=26;
+  doc.setFontSize(fs);
+  const entries=tasks.map((t,i)=>{const lines=doc.splitTextToSize(t.text,CW-9);return {n:i+1,lines,h:lines.length*lineH};});
+  const pages=packBalanced(entries,BOTTOM-y,BOTTOM-(M+6),4);
+  pages.forEach((pg,pi)=>{
+    if(pi>0){doc.addPage();pdfHeader(doc,'Funktionen','Grundaufgaben AB');y=M+6;}
+    const sumH=pg.entries.reduce((s,e)=>s+e.h,0);
+    const gap=Math.min(gapMax,Math.max(0,(pg.avail-sumH)/pg.entries.length));
+    doc.setFontSize(fs);
+    pg.entries.forEach(e=>{
+      doc.setFont('times','bold');doc.setTextColor(0,0,0);doc.text(e.n+')',M,y);
+      doc.setFont('times','normal');doc.setTextColor(0,0,0);doc.text(e.lines,M+8,y);
+      y+=e.h+gap;
+    });
+  });
+
+  // Lösungen
+  doc.addPage(); pdfHeader(doc,'Funktionen','Grundaufgaben AB · Lösungen');
+  y=titleBlock(doc,'Lösungen · '+title+(serie?' – '+serie:''),[]);
+  tasks.forEach((t,idx)=>{
+    y=ensureSpace(doc,y,34);
+    doc.setFont('times','bold');doc.setFontSize(12);doc.setTextColor(0,0,0);
+    doc.text((idx+1)+')',M,y);
+    doc.setFont('times','normal');doc.setTextColor(0,0,0);
+    const q=doc.splitTextToSize(t.text,CW-9);
+    doc.text(q,M+8,y);
+    let yy=y+q.length*5.6+2;
+    // Zweisatz
+    const L=zweisatzLines(t);
+    doc.setFont('courier','normal');doc.setFontSize(11);
+    doc.setTextColor(47,158,95); doc.text(L[0],M+10,yy); yy+=6;
+    doc.text(L[1],M+10,yy); yy+=6;
+    doc.setTextColor(213,71,62); doc.setFont('courier','bold');
+    doc.text(L[2],M+10,yy); yy+=6;
+    if(L[3]){ doc.text(L[3],M+10,yy); yy+=6; }
+    doc.setTextColor(0,0,0);
+    y=yy+5;
+  });
+  doc.save((title.replace(/\s+/g,'_'))+'_'+(serie||'Serie').replace(/\s+/g,'_')+'.pdf');
+}
+
+/* ---- Füllgraphen-PDF ---- */
+function pdfDraw(doc,fn,x,y,w,prof){ const {c,ctx}=makeCanvas(150); fn(ctx,150,prof); doc.addImage(c.toDataURL('image/png'),'PNG',x,y,w,w); }
+// Zeichnet Paare "gegeben -> (leerer Rahmen | Lösung)" zweispaltig, passt auf eine Seite
+function fuellPairs(doc,yTop,pairs){
+  const perRow=2, cell=CW/perRow, rows=Math.ceil(pairs.length/perRow);
+  const avail=BOTTOM-yTop-4;
+  const imgH=Math.min(39,Math.max(24, avail/rows - 15));
+  let y=yTop;
+  pairs.forEach((p,i)=>{
+    const col=i%perRow, cx=M+col*cell, iy=y+6, gw=imgH, tx=cx+gw+7, tw=imgH;
+    doc.setFont('times','bold');doc.setFontSize(9.5);doc.setTextColor(0,0,0);doc.text(p.label,cx,y+4);
+    pdfDraw(doc,p.leftFn,cx,iy,gw,p.leftProf);
+    doc.setFont('times','normal');doc.setFontSize(13);doc.setTextColor(0,0,0);doc.text('→',cx+gw+1.5,iy+gw/2+2);
+    if(p.emptyBox){ doc.setDrawColor(150,165,190);doc.setLineWidth(0.3);doc.roundedRect(tx,iy,tw,tw,2,2,'S'); }
+    else pdfDraw(doc,p.rightFn,tx,iy,tw,p.rightProf);
+    if(col===perRow-1||i===pairs.length-1) y=iy+gw+9;
+  });
+  return y;
+}
+function buildFuellPDF({serie,profiles,mode}){
+  const doc=jspdfDoc(); if(!doc)return;
+  const n=profiles.length; mode=mode||'match';
+  const titleTask='Gefässe füllen'+(serie?' – '+serie:'');
+  pdfHeader(doc,'Funktionen','Grundaufgaben AB');
+
+  if(mode==='match'){
+    const order=shuffle([...profiles.keys()]);
+    const letterOfProfile={}; order.forEach((profIdx,pos)=>{letterOfProfile[profIdx]=String.fromCharCode(65+pos);});
+    let y=titleBlock(doc,titleTask,['Thema: Füllgraphen von Gefässen']);
+    doc.setFont('times','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0);
+    const intro='Wasser fliesst gleichmässig in ein Gefäss. Der Graph zeigt, wie die Füllhöhe h vom eingefüllten Volumen V abhängt. Ordne jedem Gefäss den passenden Graphen zu.';
+    const il=doc.splitTextToSize(intro,CW); doc.text(il,M,y); y+=il.length*5.2+5;
+    const perRow=4, rows=Math.ceil(n/perRow)*2, headerH=6;
+    const budget=BOTTOM-y-2*headerH-8, imgH=Math.min(44,Math.max(22,budget/rows-8));
+    doc.setFont('times','bold');doc.setFontSize(12);doc.setTextColor(0,0,0);doc.text('Gefässe',M,y); y+=headerH;
+    y=drawImageGrid(doc,y,profiles.map((p,i)=>({prof:p.prof,label:'Gefäss '+(i+1),type:'vessel'})),perRow,imgH);
+    y+=2;
+    doc.setFont('times','bold');doc.setFontSize(12);doc.setTextColor(0,0,0);doc.text('Graphen',M,y); y+=headerH;
+    y=drawImageGrid(doc,y,order.map((profIdx,pos)=>({prof:profiles[profIdx].prof,label:'Graph '+String.fromCharCode(65+pos),type:'graph'})),perRow,imgH);
+    // Lösung
+    doc.addPage(); pdfHeader(doc,'Funktionen','Grundaufgaben AB · Lösungen');
+    y=titleBlock(doc,'Lösungen · '+titleTask,['Thema: Füllgraphen von Gefässen']);
+    doc.setFont('times','bold');doc.setFontSize(12);doc.setTextColor(0,0,0);doc.text('Richtige Zuordnung',M,y); y+=8;
+    doc.setFont('courier','normal');doc.setFontSize(12);doc.setTextColor(47,158,95);
+    profiles.forEach((p,i)=>{
+      y=ensureSpace(doc,y,8); doc.setTextColor(47,158,95);
+      doc.text(`Gefäss ${i+1}  →  ${letterOfProfile[i]}`,M,y);
+      doc.setFont('times','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0);
+      const ex=doc.splitTextToSize('('+p.name+') '+p.explain, CW-40); doc.text(ex,M+40,y);
+      doc.setFont('courier','normal');doc.setFontSize(12);
+      y+=Math.max(7, ex.length*5+2);
+    });
+    doc.save('Gefaesse_fuellen_'+(serie||'Serie').replace(/\s+/g,'_')+'.pdf'); return;
+  }
+
+  // Zeichen-Modi: graph / gefaess / vermischt
+  let y=titleBlock(doc,titleTask,['Thema: Füllgraphen von Gefässen']);
+  doc.setFont('times','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0);
+  const intro = mode==='graph'
+      ? 'Wasser fliesst gleichmässig in jedes Gefäss. Zeichne im leeren Achsenkreuz den passenden Füllgraphen (Füllhöhe h in Abhängigkeit vom Volumen V).'
+    : mode==='gefaess'
+      ? 'Die Graphen zeigen die Füllhöhe h in Abhängigkeit vom Volumen V. Zeichne zu jedem Graphen ein passendes Gefäss in den leeren Rahmen.'
+      : 'Vermischte Aufgaben: Zeichne zum gegebenen Gefäss den passenden Graphen bzw. zum gegebenen Graphen ein passendes Gefäss.';
+  const il=doc.splitTextToSize(intro,CW); doc.text(il,M,y); y+=il.length*5.2+4;
+
+  const kinds = profiles.map(()=> mode==='vermischt' ? (Math.random()<0.5?'graph':'gefaess') : mode);
+  const taskPairs = profiles.map((p,i)=> kinds[i]==='graph'
+      ? {label:'Gefäss '+(i+1), leftFn:drawVessel, leftProf:p.prof, rightFn:drawGraphAxes}
+      : {label:'Graph '+(i+1),  leftFn:drawGraph,  leftProf:p.prof, emptyBox:true});
+  fuellPairs(doc,y,taskPairs);
+
+  // Lösung
+  doc.addPage(); pdfHeader(doc,'Funktionen','Grundaufgaben AB · Lösungen');
+  let y2=titleBlock(doc,'Lösungen · '+titleTask,['Thema: Füllgraphen von Gefässen']);
+  doc.setFont('times','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0);
+  doc.text('Zu jeder Aufgabe eine mögliche Lösung:',M,y2); y2+=6;
+  const solPairs = profiles.map((p,i)=> kinds[i]==='graph'
+      ? {label:'Gefäss '+(i+1), leftFn:drawVessel, leftProf:p.prof, rightFn:drawGraph,  rightProf:p.prof}
+      : {label:'Graph '+(i+1),  leftFn:drawGraph,  leftProf:p.prof, rightFn:drawVessel, rightProf:p.prof});
+  fuellPairs(doc,y2,solPairs);
+  doc.save('Gefaesse_fuellen_'+(serie||'Serie').replace(/\s+/g,'_')+'.pdf');
+}
+
+function drawImageGrid(doc,yTop,items,perRow,imgH){
+  const cell=CW/perRow, imgW=imgH; let y=yTop;
+  items.forEach((it,i)=>{
+    const col=i%perRow;
+    const x=M+col*cell+(cell-imgW)/2;
+    const {c,ctx}=makeCanvas(150);
+    (it.type==='vessel'?drawVessel:drawGraph)(ctx,150,it.prof);
+    doc.addImage(c.toDataURL('image/png'),'PNG',x,y,imgW,imgH);
+    doc.setFont('times','bold');doc.setFontSize(9.5);doc.setTextColor(0,0,0);
+    doc.text(it.label,M+col*cell+cell/2,y+imgH+4,{align:'center'});
+    if(col===perRow-1||i===items.length-1) y+=imgH+8;
+  });
+  return y;
+}
+
+/* ---- Koordinaten-PDF ---- */
+function koordGridImage(bounds,marks,opts,px){
+  const {c,ctx}=makeCanvas(px||400);
+  drawCoordCanvas(ctx,px||400,bounds,marks||[],opts||{});
+  return c.toDataURL('image/png');
+}
+function pointColumns(doc,x0,yTop,width,items,cols,fs){
+  cols=cols||3; fs=fs||11; const colW=width/cols, rowH=fs*0.55+2.8;
+  doc.setFont('times','normal');doc.setFontSize(fs);doc.setTextColor(0,0,0);
+  items.forEach((it,i)=>{const col=i%cols,row=Math.floor(i/cols);doc.text(it,x0+col*colW,yTop+row*rowH+rowH*0.7);});
+  return yTop+Math.ceil(items.length/cols)*rowH;
+}
+function uniquePoints(b,n){
+  const used=new Set(),pts=[]; let g=0;
+  while(pts.length<n && g++<800){ const p=randPoint(b); const k=p.x+','+p.y; if(used.has(k))continue; used.add(k); pts.push({x:p.x,y:p.y,num:pts.length+1}); }
+  return pts;
+}
+function buildKoordPDF({type,serie,n,diff}){
+  const doc=jspdfDoc(); if(!doc)return;
+  const save=name=>doc.save(name+'_'+(serie||'Serie').replace(/\s+/g,'_')+'.pdf');
+
+  if(type==='figur'){
+    const fig=pick(KFIGUREN), b=figBounds(fig.pts);
+    const pts=fig.pts.map((p,i)=>({x:p[0],y:p[1],num:i+1}));
+    pdfHeader(doc,'Koordinaten','Grundaufgaben AB');
+    let y=titleBlock(doc,'Koordinatensystem'+(serie?' – '+serie:''),['Thema: Figur zeichnen']);
+    doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+    const intro='Zeichne die Punkte P1 bis P'+pts.length+' ins Koordinatensystem ein und verbinde sie der Reihe nach'+(fig.closed?' – zum Schluss P'+pts.length+' zurück zu P1':'')+'.';
+    const il=doc.splitTextToSize(intro,CW); doc.text(il,M,y); y+=il.length*5.4+3;
+    doc.setFont('times','bold');doc.text('Um welche Figur handelt es sich?   ________________________',M,y); y+=8;
+    doc.setFont('times','normal');
+    const gw=112; doc.addImage(koordGridImage(b,[],{},400),'PNG',M,y,gw,gw);
+    pointColumns(doc,M+gw+8,y+3,CW-gw-8,pts.map(p=>'P'+p.num+' ( '+p.x+' / '+p.y+' )'),1,11);
+    // Lösung
+    doc.addPage(); pdfHeader(doc,'Koordinaten','Grundaufgaben AB · Lösungen');
+    let y2=titleBlock(doc,'Lösung · Koordinatensystem'+(serie?' – '+serie:''),['Figur: '+fig.name]);
+    doc.addImage(koordGridImage(b,pts.map(p=>({x:p.x,y:p.y,label:'P'+p.num,color:'#111111'})),{connect:true,closed:fig.closed,connectColor:'#111111'},440),'PNG',M,y2,120,120);
+    doc.setFont('times','bold');doc.setFontSize(14);doc.setTextColor(0,0,0);
+    doc.text('Figur: '+fig.name, M+126, y2+14);
+    save('Koordinaten_Figur'); return;
+  }
+
+  const b=koordBounds(diff);
+  const pts=uniquePoints(b,n);
+
+  if(type==='ablesen'){
+    pdfHeader(doc,'Koordinaten','Grundaufgaben AB');
+    let y=titleBlock(doc,'Koordinatensystem'+(serie?' – '+serie:''),['Thema: Koordinaten ablesen']);
+    doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+    doc.text('Bestimme die Koordinaten der eingezeichneten Punkte P1 bis P'+n+'.',M,y); y+=7;
+    const img=koordGridImage(b,pts.map(p=>({x:p.x,y:p.y,label:'P'+p.num,color:'#111111'})),{},440);
+    const gw=118; doc.addImage(img,'PNG',(PW-gw)/2,y,gw,gw); y+=gw+6;
+    pointColumns(doc,M,y,CW,pts.map(p=>'P'+p.num+' (        /        )'),3,11);
+    doc.addPage(); pdfHeader(doc,'Koordinaten','Grundaufgaben AB · Lösungen');
+    let y2=titleBlock(doc,'Lösung · Koordinaten ablesen'+(serie?' – '+serie:''),[]);
+    doc.addImage(img,'PNG',(PW-gw)/2,y2,gw,gw); y2+=gw+6;
+    pointColumns(doc,M,y2,CW,pts.map(p=>'P'+p.num+' ( '+p.x+' / '+p.y+' )'),3,11);
+    save('Koordinaten_ablesen'); return;
+  }
+
+  // einzeichnen
+  pdfHeader(doc,'Koordinaten','Grundaufgaben AB');
+  let y=titleBlock(doc,'Koordinatensystem'+(serie?' – '+serie:''),['Thema: Punkte einzeichnen']);
+  doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+  doc.text('Zeichne die folgenden Punkte ins Koordinatensystem ein und beschrifte sie mit P1, P2, …',M,y); y+=7;
+  y=pointColumns(doc,M,y,CW,pts.map(p=>'P'+p.num+' ( '+p.x+' / '+p.y+' )'),3,11)+4;
+  const rem=BOTTOM-y, gw=Math.min(122,rem-2);
+  if(gw>60) doc.addImage(koordGridImage(b,[],{},420),'PNG',(PW-gw)/2,y,gw,gw);
+  doc.addPage(); pdfHeader(doc,'Koordinaten','Grundaufgaben AB · Lösungen');
+  let y2=titleBlock(doc,'Lösung · Punkte einzeichnen'+(serie?' – '+serie:''),[]);
+  const gw2=120; doc.addImage(koordGridImage(b,pts.map(p=>({x:p.x,y:p.y,label:'P'+p.num,color:'#111111'})),{},440),'PNG',(PW-gw2)/2,y2,gw2,gw2); y2+=gw2+6;
+  pointColumns(doc,M,y2,CW,pts.map(p=>'P'+p.num+' ( '+p.x+' / '+p.y+' )'),3,11);
+  save('Koordinaten_einzeichnen');
+}
+/* ===== Theorie-Illustrationen ===== */
+function mk2(w,h){const c=document.createElement('canvas');const dpr=2;c.width=w*dpr;c.height=h*dpr;c.style.width=w+'px';c.style.height=h+'px';const ctx=c.getContext('2d');ctx.scale(dpr,dpr);return {c,ctx};}
+function illuItem(canvas,cap){const d=document.createElement('div');d.className='illu-item';d.appendChild(canvas);if(cap){const c=document.createElement('div');c.className='illu-cap';c.textContent=cap;d.appendChild(c);}return d;}
+function drawMiniCoord(ctx,W,H,px,py){ctx.clearRect(0,0,W,H);const R=4,cx=W/2,cy=H/2,ux=(W*0.42)/R,uy=(H*0.42)/R;
+  ctx.strokeStyle='#e5ebf5';ctx.lineWidth=1;for(let i=-R;i<=R;i++){ctx.beginPath();ctx.moveTo(cx+i*ux,cy-R*uy);ctx.lineTo(cx+i*ux,cy+R*uy);ctx.stroke();ctx.beginPath();ctx.moveTo(cx-R*ux,cy+i*uy);ctx.lineTo(cx+R*ux,cy+i*uy);ctx.stroke();}
+  ctx.strokeStyle='#7a8aa6';ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(cx-R*ux,cy);ctx.lineTo(cx+R*ux,cy);ctx.moveTo(cx,cy+R*uy);ctx.lineTo(cx,cy-R*uy);ctx.stroke();
+  ctx.fillStyle='#7a8aa6';ctx.font='11px system-ui,Arial';ctx.fillText('x',cx+R*ux-8,cy-4);ctx.fillText('y',cx+5,cy-R*uy+10);
+  const x=cx+px*ux,y=cy-py*uy;ctx.strokeStyle='#c3cee0';ctx.setLineDash([3,3]);ctx.beginPath();ctx.moveTo(cx,y);ctx.lineTo(x,y);ctx.lineTo(x,cy);ctx.stroke();ctx.setLineDash([]);
+  ctx.fillStyle='#d5473e';ctx.beginPath();ctx.arc(x,y,4,0,7);ctx.fill();ctx.fillStyle='#15305c';ctx.font='bold 12px system-ui,Arial';ctx.fillText('P('+px+' / '+py+')',x+7,y-7);}
+function drawMiniPlot(ctx,W,H,type){ctx.clearRect(0,0,W,H);const ox=W*0.14,oy=H*0.84,w=W*0.76,h=H*0.7;
+  ctx.strokeStyle='#7a8aa6';ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(ox,oy);ctx.lineTo(ox+w,oy);ctx.moveTo(ox,oy);ctx.lineTo(ox,oy-h);ctx.stroke();
+  ctx.fillStyle='#7a8aa6';ctx.font='11px system-ui,Arial';ctx.fillText('x',ox+w-6,oy+11);ctx.fillText('y',ox-11,oy-h+8);
+  ctx.strokeStyle='#2f62c4';ctx.lineWidth=2.6;ctx.beginPath();
+  if(type==='line'){ctx.moveTo(ox,oy);ctx.lineTo(ox+w,oy-h*0.94);}
+  else{const xs=0.5,xe=4;for(let i=0;i<=60;i++){const xx=xs+(xe-xs)*i/60,yy=1/xx,X=ox+(xx/xe)*w,Y=oy-(yy/2)*h;if(i===0)ctx.moveTo(X,Y);else ctx.lineTo(X,Y);}}
+  ctx.stroke();}
+function renderIllus(root){(root||document).querySelectorAll('.illu[data-draw]').forEach(function(el){
+  if(el.dataset.done)return;el.dataset.done='1';var p=el.dataset.draw.split(':'),kind=p[0];
+  if(kind==='vessel'){var pr=makeProfile(p[1]);el.classList.add('illu-row');var m1=makeCanvas(140);drawVessel(m1.ctx,140,pr.prof);el.appendChild(illuItem(m1.c,'Gefäss'));var m2=makeCanvas(140);drawGraph(m2.ctx,140,pr.prof);el.appendChild(illuItem(m2.c,'Füllgraph'));}
+  else if(kind==='koord'){var mk=mk2(240,200);drawMiniCoord(mk.ctx,240,200,+p[1],+p[2]);el.appendChild(mk.c);}
+  else if(kind==='plot'){var mk=mk2(240,150);drawMiniPlot(mk.ctx,240,150,p[1]);el.appendChild(illuItem(mk.c,p[1]==='line'?'Gerade durch (0/0)':'fallende Kurve'));}
+});}
+renderIllus();
+</script>
+</body>
+</html>

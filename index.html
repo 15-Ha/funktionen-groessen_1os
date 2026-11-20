@@ -699,6 +699,32 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
   .illu-row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
   .illu-item{text-align:center}
   .illu-cap{font-size:11.5px;color:var(--ink-soft);margin-top:5px}
+  .lz-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .lz-list li{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    padding:9px 4px;border-bottom:1px solid var(--line)}
+  .lz-list li:last-child{border-bottom:none}
+  .lz-list label{display:flex;align-items:center;gap:10px;cursor:pointer;flex:1;min-width:220px}
+  .lz-list input{width:18px;height:18px;accent-color:var(--brand)}
+  .lz-links{display:flex;gap:8px;flex-wrap:wrap}
+  .lz-link{display:inline-flex;align-items:center;gap:6px}
+  .lz-tag{font-size:11.5px;color:var(--ink-soft)}
+  .lz-go{border:1px solid var(--line-2);background:var(--card-2);color:var(--brand);font-weight:600;
+    font-size:13px;padding:5px 12px;border-radius:8px;cursor:pointer}
+  .lz-go:hover{background:var(--mint-soft);border-color:var(--mint)}
+  .lnk-inline{border:none;background:none;color:var(--brand);font-weight:600;cursor:pointer;
+    font-family:inherit;font-size:inherit;padding:0;text-decoration:underline}
+  .nav-row{display:flex;align-items:center;gap:2px}
+  .nav-row .nav-label-btn{flex:1;text-align:left;border:none;background:none;cursor:pointer;
+    font-family:inherit;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;
+    font-size:12.5px;font-weight:700;padding:14px 4px 6px}
+  .nav-row .nav-label-btn.active{color:var(--brand)}
+  .nav-chevron{border:none;background:none;cursor:pointer;color:var(--ink-soft);font-size:13px;
+    padding:6px 8px;transition:transform .15s}
+  .nav-chevron.open{transform:rotate(90deg)}
+  .nav-sub{display:none;flex-direction:column}
+  .nav-sub.open{display:flex}
+  .navbtn-sub{padding-left:30px!important;font-size:13.5px!important;opacity:.88}
+  .navbtn-sub.active{opacity:1}
 </style>
 </head>
 <body>
@@ -712,17 +738,26 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
         <p>Funktionen &amp; Grössen</p>
       </div>
     </div>
-    <nav>
+    <nav id="nav">
       <div class="nav-label">Start</div>
       <button class="navbtn active" data-view="home"><span class="ico">▦</span> Übersicht</button>
-      <div class="nav-label">Themen</div>
-      <button class="navbtn" data-view="groessen"><span class="ico">⇄</span> Grössen umrechnen</button>
-      <button class="navbtn" data-view="direkt"><span class="ico">↗</span> Direkte Proportionalität</button>
-      <button class="navbtn" data-view="indirekt"><span class="ico">↘</span> Indirekte Proportionalität</button>
-      <button class="navbtn" data-view="fuell"><span class="ico">◠</span> Füllgraphen von Gefässen</button>
-      <button class="navbtn" data-view="koordinaten"><span class="ico">⊕</span> Koordinatensystem</button>
-      <div class="nav-label">Lernkontrolle</div>
-      <button class="navbtn" data-view="lernkontrolle"><span class="ico">✎</span> Lernkontrolle</button>
+      <button class="navbtn" data-view="lernkontrolle" data-lkscope="ALL"><span class="ico">✎</span> Lernkontrolle</button>
+      <div class="nav-row"><button class="nav-label nav-label-btn" data-view="grp-groessen">Grössen</button><button class="nav-chevron" data-toggle="grp-groessen" aria-label="Themenliste ein-/ausblenden">▸</button></div>
+      <div class="nav-sub" data-group="grp-groessen">
+        <button class="navbtn navbtn-sub" data-view="groessen"><span class="ico">›</span> Grössen umrechnen</button>
+      </div>
+      <div class="nav-row"><button class="nav-label nav-label-btn" data-view="grp-funktionen">Funktionen</button><button class="nav-chevron" data-toggle="grp-funktionen" aria-label="Themenliste ein-/ausblenden">▸</button></div>
+      <div class="nav-sub" data-group="grp-funktionen">
+        <button class="navbtn navbtn-sub" data-view="direkt"><span class="ico">›</span> Direkte Proportionalität</button>
+        <button class="navbtn navbtn-sub" data-view="indirekt"><span class="ico">›</span> Indirekte Proportionalität</button>
+        <button class="navbtn navbtn-sub" data-view="fuell"><span class="ico">›</span> Füllgraphen von Gefässen</button>
+      </div>
+      <div class="nav-row"><button class="nav-label nav-label-btn" data-view="grp-koordinaten">Koordinaten</button><button class="nav-chevron" data-toggle="grp-koordinaten" aria-label="Themenliste ein-/ausblenden">▸</button></div>
+      <div class="nav-sub" data-group="grp-koordinaten">
+        <button class="navbtn navbtn-sub" data-view="koordinaten"><span class="ico">›</span> Koordinatensystem</button>
+      </div>
+      <div class="nav-label">Hilfe</div>
+      <button class="navbtn" data-view="anleitung"><span class="ico">?</span> So funktioniert's</button>
     </nav>
     <div class="sidebar-foot">
       Übe frei im Reiter «Üben» oder erstelle im Reiter «Arbeitsblatt» ein PDF mit Aufgaben&nbsp;+ Lösungen.
@@ -741,52 +776,166 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
         <div class="hero">
           <div class="eyebrow">Mathematik · Lernlandschaft</div>
           <h2 class="title">Funktionen und <span class="topic-tag">Grössen</span></h2>
-          <p class="lead">Übe die Themen aus «Funktionen» und «Grössen» selbstständig – mit sofortiger Rückmeldung und ausgeschriebenem Lösungsweg. Zu jedem Thema kannst du dir ein Arbeitsblatt mit Lösungen als PDF erzeugen.</p>
+          <p class="lead">Übe die Themen aus «Funktionen» und «Grössen» selbstständig – mit sofortiger Rückmeldung und ausgeschriebenem Lösungsweg. <button class="lnk-inline" data-view="anleitung">So funktioniert's →</button></p>
         </div>
 
+        <div class="eyebrow" style="margin:24px 0 12px;color:#8a5d12">Lernkontrolle</div>
+        <div class="cards">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="ALL" style="--accent:#B0781B">
+            <span class="k">Lernkontrolle</span>
+            <span class="d">Alle Themen zusammen – online oder als PDF.</span>
+            <span class="go" style="color:#8a5d12">Öffnen →</span>
+          </button>
+        </div>
+
+        <div class="eyebrow" style="margin:24px 0 12px;color:#1E7454">Themen</div>
+        <div class="cards">
+          <button class="card-topic" data-view="grp-groessen" style="--accent:#005F6A">
+            <span class="k">Grössen</span>
+            <span class="d">Längen, Massen, Zeit, Fläche, Hohlmass und Geld umrechnen</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="grp-funktionen" style="--accent:#1E7454">
+            <span class="k">Funktionen</span>
+            <span class="d">Zweisatz bei direkter und indirekter Proportionalität, Füllgraphen von Gefässen</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="grp-koordinaten" style="--accent:#7A5AC4">
+            <span class="k">Koordinaten</span>
+            <span class="d">Punkte, Quadranten und Spiegelungen im Koordinatensystem</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- GRUPPE: GRÖSSEN -->
+      <section class="view" id="view-grp-groessen">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen und Grössen»</span></div>
+        <h2 class="title">Grössen</h2>
+        <p class="lead">Lernstand prüfen, Lernziele im Blick, Übungen starten.</p>
+        <div class="cards" style="margin-bottom:26px">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="groessen" style="--accent:#B0781B">
+            <span class="k">Lernstandsüberprüfung</span>
+            <span class="d">Vor dem Üben: zeigt, was du schon kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
+        </div>
+        <div class="sheet" style="margin:4px 0 20px">
+          <div class="eyebrow">Was muss ich können?</div>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .5em;font-size:22px">Lernziele · Grössen</h3>
+          <ul class="lz-list">
+            <li><label><input type="checkbox"><span>Ich kann Längen, Massen, Zeiten, Flächen, Hohlmasse und Geldbeträge in die nächstkleinere oder -grössere Einheit umrechnen.</span></label>
+              <div class="lz-links"><span class="lz-link"><button class="lz-go" data-practice="groessen">Üben</button></span></div></li>
+          </ul>
+          <p class="hint" style="margin:12px 0 0">Hake ab, was du schon kannst.</p>
+        </div>
+        <div class="eyebrow" style="margin:24px 0 12px;color:#1E7454">Übungen</div>
         <div class="cards">
           <button class="card-topic" data-view="groessen" style="--accent:#005F6A">
-            <span class="badge" style="background:#eef3fb;color:#244f9e">Grössen</span>
             <span class="k">Grössen umrechnen</span>
             <span class="d">Länge, Masse, Zeit, Fläche, Hohlmass und Geld sicher umrechnen.</span>
-            <span class="go">Öffnen →</span>
-          </button>
-          <button class="card-topic" data-view="direkt" style="--accent:#1E7454">
-            <span class="badge" style="background:#eaf7ef;color:#1E7454">Funktionen</span>
-            <span class="k">Direkte Proportionalität</span>
-            <span class="d">Je mehr, desto mehr – Sachaufgaben mit dem Zweisatz lösen.</span>
-            <span class="go">Öffnen →</span>
-          </button>
-          <button class="card-topic" data-view="indirekt" style="--accent:#8F6115">
-            <span class="badge" style="background:#fbf2e3;color:#a9761f">Funktionen</span>
-            <span class="k">Indirekte Proportionalität</span>
-            <span class="d">Je mehr, desto weniger – umgekehrter Zweisatz.</span>
-            <span class="go">Öffnen →</span>
-          </button>
-          <button class="card-topic" data-view="fuell" style="--accent:#A34E2C">
-            <span class="badge" style="background:#fdeeec;color:#C0392B">Funktionen</span>
-            <span class="k">Füllgraphen von Gefässen</span>
-            <span class="d">Gefässformen und ihre Füllhöhen-Graphen einander zuordnen.</span>
-            <span class="go">Öffnen →</span>
-          </button>
-          <button class="card-topic" data-view="koordinaten" style="--accent:#7A5AC4">
-            <span class="badge" style="background:#f1ecfa;color:#5e39a6">Koordinaten</span>
-            <span class="k">Koordinatensystem</span>
-            <span class="d">Punkte ablesen, einzeichnen, Quadranten bestimmen und Figuren zeichnen.</span>
-            <span class="go">Öffnen →</span>
-          </button>
-          <button class="card-topic" data-view="lernkontrolle" style="--accent:#B0781B">
-            <span class="badge" style="background:#fcf3dc;color:#8a5d12">Lernkontrolle</span>
-            <span class="k">Lernkontrolle</span>
-            <span class="d">Themen und Anzahl Aufgaben wählen – online lösen mit Auswertung oder ausdrucken.</span>
-            <span class="go">Öffnen →</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
           </button>
         </div>
+        <div class="eyebrow" style="margin:30px 0 12px;color:#8a5d12">Lernkontrolle</div>
+        <div class="cards">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="groessen" style="--accent:#B0781B">
+            <span class="k">Lernkontrolle</span>
+            <span class="d">Zum Schluss: prüft, ob du alles kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
+        </div>
+      </section>
 
-        <div class="sheet" style="margin-top:26px">
-          <div class="eyebrow">So funktioniert's</div>
-          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Üben &amp; Arbeitsblätter erstellen</h3>
-          <p style="color:var(--ink-soft);margin:0;max-width:70ch">Jedes Thema hat zwei Reiter. Unter <b>Üben</b> bekommst du beliebig viele Aufgaben, gibst deine Lösung ein und erhältst sofort die Kontrolle samt Lösungsweg. Unter <b>Arbeitsblatt erstellen</b> wählst du Themen, Anzahl und Schwierigkeit – und lädst ein druckfertiges PDF mit separaten Lösungen herunter.</p>
+      <!-- GRUPPE: FUNKTIONEN -->
+      <section class="view" id="view-grp-funktionen">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen und Grössen»</span></div>
+        <h2 class="title">Funktionen</h2>
+        <p class="lead">Lernstand prüfen, Lernziele im Blick, Übungen starten.</p>
+        <div class="cards" style="margin-bottom:26px">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="direkt,indirekt,fuell" style="--accent:#B0781B">
+            <span class="k">Lernstandsüberprüfung</span>
+            <span class="d">Vor dem Üben: zeigt, was du schon kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
+        </div>
+        <div class="sheet" style="margin:4px 0 20px">
+          <div class="eyebrow">Was muss ich können?</div>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .5em;font-size:22px">Lernziele · Funktionen</h3>
+          <ul class="lz-list">
+            <li><label><input type="checkbox"><span>Ich kann Sachaufgaben zur direkten Proportionalität mit dem Zweisatz lösen.</span></label>
+              <div class="lz-links"><span class="lz-link"><span class="lz-tag">Direkte Proportionalität</span><button class="lz-go" data-practice="direkt">Üben</button></span></div></li>
+            <li><label><input type="checkbox"><span>Ich kann Sachaufgaben zur indirekten Proportionalität mit dem umgekehrten Zweisatz lösen.</span></label>
+              <div class="lz-links"><span class="lz-link"><span class="lz-tag">Indirekte Proportionalität</span><button class="lz-go" data-practice="indirekt">Üben</button></span></div></li>
+            <li><label><input type="checkbox"><span>Ich kann Füllgraphen von Gefässen den passenden Gefässformen zuordnen und begründen.</span></label>
+              <div class="lz-links"><span class="lz-link"><span class="lz-tag">Füllgraphen von Gefässen</span><button class="lz-go" data-practice="fuell">Üben</button></span></div></li>
+          </ul>
+          <p class="hint" style="margin:12px 0 0">Hake ab, was du schon kannst.</p>
+        </div>
+        <div class="eyebrow" style="margin:24px 0 12px;color:#1E7454">Übungen</div>
+        <div class="cards">
+          <button class="card-topic" data-view="direkt" style="--accent:#1E7454">
+            <span class="k">Direkte Proportionalität</span>
+            <span class="d">Je mehr, desto mehr – Sachaufgaben mit dem Zweisatz lösen.</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="indirekt" style="--accent:#8F6115">
+            <span class="k">Indirekte Proportionalität</span>
+            <span class="d">Je mehr, desto weniger – umgekehrter Zweisatz.</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+          <button class="card-topic" data-view="fuell" style="--accent:#A34E2C">
+            <span class="k">Füllgraphen von Gefässen</span>
+            <span class="d">Gefässformen und ihre Füllhöhen-Graphen einander zuordnen.</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+        </div>
+        <div class="eyebrow" style="margin:30px 0 12px;color:#8a5d12">Lernkontrolle</div>
+        <div class="cards">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="direkt,indirekt,fuell" style="--accent:#B0781B">
+            <span class="k">Lernkontrolle</span>
+            <span class="d">Zum Schluss: prüft, ob du alles kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- GRUPPE: KOORDINATEN -->
+      <section class="view" id="view-grp-koordinaten">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen und Grössen»</span></div>
+        <h2 class="title">Koordinaten</h2>
+        <p class="lead">Lernstand prüfen, Lernziele im Blick, Übungen starten.</p>
+        <div class="cards" style="margin-bottom:26px">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="koordinaten" style="--accent:#B0781B">
+            <span class="k">Lernstandsüberprüfung</span>
+            <span class="d">Vor dem Üben: zeigt, was du schon kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
+        </div>
+        <div class="sheet" style="margin:4px 0 20px">
+          <div class="eyebrow">Was muss ich können?</div>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .5em;font-size:22px">Lernziele · Koordinaten</h3>
+          <ul class="lz-list">
+            <li><label><input type="checkbox"><span>Ich kann Punkte im Koordinatensystem ablesen, einzeichnen, spiegeln und Quadranten bestimmen.</span></label>
+              <div class="lz-links"><span class="lz-link"><button class="lz-go" data-practice="koordinaten">Üben</button></span></div></li>
+          </ul>
+          <p class="hint" style="margin:12px 0 0">Hake ab, was du schon kannst.</p>
+        </div>
+        <div class="eyebrow" style="margin:24px 0 12px;color:#1E7454">Übungen</div>
+        <div class="cards">
+          <button class="card-topic" data-view="koordinaten" style="--accent:#7A5AC4">
+            <span class="k">Koordinatensystem</span>
+            <span class="d">Punkte ablesen, einzeichnen, Quadranten bestimmen und Figuren zeichnen.</span>
+            <span class="go" style="color:#1E7454">Öffnen →</span>
+          </button>
+        </div>
+        <div class="eyebrow" style="margin:30px 0 12px;color:#8a5d12">Lernkontrolle</div>
+        <div class="cards">
+          <button class="card-topic" data-view="lernkontrolle" data-lkscope="koordinaten" style="--accent:#B0781B">
+            <span class="k">Lernkontrolle</span>
+            <span class="d">Zum Schluss: prüft, ob du alles kannst.</span>
+            <span class="go" style="color:#8a5d12">Starten →</span>
+          </button>
         </div>
       </section>
 
@@ -895,6 +1044,23 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var r,n,i,a,
         <h2 class="title">Lernkontrolle</h2>
         <p class="lead">Wähle die Themen und die Anzahl Aufgaben. Löse die Lernkontrolle online – die Auswertung mit Feedback folgt beim Abgeben – oder drucke sie mit Punkten und Lösungsblatt aus.</p>
         <div id="lk-host"></div>
+      </section>
+      <!-- ANLEITUNG -->
+      <section class="view" id="view-anleitung">
+        <div class="eyebrow">Mathematik <span class="topic-tag">«Funktionen und Grössen»</span> · Hilfe</div>
+        <h2 class="title">So funktioniert's</h2>
+        <div class="sheet">
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Themenseiten</h3>
+          <p style="color:var(--ink-soft);margin:0 0 16px;max-width:70ch">Klick links auf ein Teilthema (z.&nbsp;B. «Funktionen») für dessen Startseite mit Lernstandsüberprüfung, Lernzielen und Übungen. Der kleine Pfeil daneben klappt die Übungsliste ein oder aus.</p>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Lernziele</h3>
+          <p style="color:var(--ink-soft);margin:0 0 16px;max-width:70ch">Abhaken, was du schon kannst. «Üben» führt direkt zur passenden Übung.</p>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Üben &amp; Arbeitsblätter erstellen</h3>
+          <p style="color:var(--ink-soft);margin:0 0 16px;max-width:70ch">Zwei Reiter pro Übung: <b>Üben</b> für beliebig viele Aufgaben mit Lösungsweg, <b>Arbeitsblatt erstellen</b> für ein PDF mit Lösungen.</p>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Schwierigkeitsstufen</h3>
+          <p style="color:var(--ink-soft);margin:0 0 16px;max-width:70ch"><b>Grundanforderungen</b> = Basis, <b>Erweitert</b> = darauf aufbauend, <b>Anspruchsvoll</b> = Niveau Kanti/BMS/WMS/FMS.</p>
+          <h3 style="font-family:var(--serif);margin:.3em 0 .2em;font-size:22px">Lernstandsüberprüfung &amp; Lernkontrolle</h3>
+          <p style="color:var(--ink-soft);margin:0;max-width:70ch">Gleiche Aufgabenserie, unterschiedlicher Zeitpunkt: <b>Lernstandsüberprüfung</b> vor dem Üben zeigt, was noch fehlt. <b>Lernkontrolle</b> nach dem Üben prüft, ob alles sitzt. Auf der Startseite deckt die Lernkontrolle alle Themen zusammen ab.</p>
+        </div>
       </section>
     </main>
   </div>
@@ -1314,13 +1480,31 @@ function missItem(qHTML,userHTML,correctHTML){ return '<div class="miss-item"><d
 /* ============================================================
    Navigation & Tabs
 ============================================================ */
+const TOPIC_GROUP_SLUG={groessen:'grp-groessen',direkt:'grp-funktionen',indirekt:'grp-funktionen',fuell:'grp-funktionen',koordinaten:'grp-koordinaten'};
 function showView(id){
   $$('.view').forEach(v=>v.classList.toggle('active', v.id==='view-'+id));
-  $$('.navbtn').forEach(b=>b.classList.toggle('active', b.dataset.view===id));
+  $$('.navbtn,.nav-label-btn').forEach(b=>b.classList.toggle('active', b.dataset.view===id));
+  if(id==='home'){setNavGroup(null,false);}
+  else{const gk=(id.indexOf('grp-')===0)?id:TOPIC_GROUP_SLUG[id];if(gk)setNavGroup(gk,true);}
   $('#sidebar').classList.remove('open');
   window.scrollTo({top:0,behavior:'smooth'});
 }
+function setNavGroup(key,open){
+  $$('.nav-sub').forEach(function(el){el.classList.toggle('open',el.dataset.group===key&&open!==false);});
+  $$('.nav-chevron').forEach(function(b){b.classList.toggle('open',b.dataset.toggle===key&&open!==false);});
+}
+function toggleNavGroup(key){const sub=document.querySelector('.nav-sub[data-group="'+key+'"]');setNavGroup(key,!(sub&&sub.classList.contains('open')));}
+function goPractice(key){showView(key);const b=document.querySelector('#view-'+key+' .tab[data-panel="uebn"]');if(b)b.click();}
+let LK_SCOPE=null;
+function goToLK(scope){
+  LK_SCOPE=(!scope||scope==='ALL')?null:scope.split(',').filter(Boolean);
+  mountLK();
+  showView('lernkontrolle');
+}
 $$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+$$('[data-practice]').forEach(b=>b.addEventListener('click',()=>goPractice(b.dataset.practice)));
+$$('[data-lkscope]').forEach(b=>b.addEventListener('click',()=>goToLK(b.dataset.lkscope)));
+$$('.nav-chevron').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();toggleNavGroup(b.dataset.toggle);}));
 $('#menuToggle').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
 $$('.tabs').forEach(tabs=>{
   tabs.addEventListener('click',e=>{
@@ -1421,9 +1605,9 @@ function aggRecord(agg,diff,ok){if(!agg[diff])agg[diff]={ok:0,n:0};agg[diff].n++
 function setProg(id,n){var e=document.getElementById(id);if(e)e.textContent=n?('Aufgaben in dieser Serie: '+n):'Noch keine Aufgabe in dieser Serie.';}
 function serieBarHTML(pfx){return '<div class="serie-bar"><span class="gen-note" id="'+pfx+'-prog">Noch keine Aufgabe in dieser Serie.</span><button class="btn btn-ghost" id="'+pfx+'-reset">Neue Serie</button><button class="btn btn-primary" id="'+pfx+'-eval">Serie auswerten</button></div>';}
 function protoBar(p){return '<span class="pbar"><span class="pbar-fill" style="width:'+p+'%;background:'+(p>=70?'#2f9e5f':(p>=50?'#e6a23c':'#d5473e'))+'"></span></span>';}
-function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'leicht (Basis)',2:'mittel',3:'schwer'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
+function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
 function protoAssess(pct){if(pct>=90)return['sicher beherrscht','#1f7a45','#e9f7ef'];if(pct>=70)return['grösstenteils sicher','#846516','#f6efd8'];if(pct>=50)return['noch unsicher','#a9631b','#fbeede'];return['noch nicht sicher','#b23c30','#fdeeec'];}
-function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Thema wird sicher beherrscht.';else if(pct>=70)base='Das Thema ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Thema ist aber noch unsicher – weiter üben.';else base='Das Thema ist noch nicht sicher – die Grundlagen sollten wiederholt werden.';var weak='';if(byDiff){var worst=null,labs={1:'leicht',2:'mittel',3:'schwer'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
+function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Thema wird sicher beherrscht.';else if(pct>=70)base='Das Thema ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Thema ist aber noch unsicher – weiter üben.';else base='Das Thema ist noch nicht sicher – die Grundlagen sollten wiederholt werden.';var weak='';if(byDiff){var worst=null,labs={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
 function ensureProtoOverlay(){var ov=document.getElementById('protoOverlay');if(ov)return ov;ov=document.createElement('div');ov.className='proto-overlay';ov.id='protoOverlay';ov.hidden=true;ov.innerHTML='<div class="proto-card"><div class="proto-actions no-print"><button class="btn btn-primary" id="protoPrint">Drucken / als PDF speichern</button><button class="btn btn-ghost" id="protoClose">Schliessen</button></div><div id="protoBody"></div></div>';document.body.appendChild(ov);ov.querySelector('#protoPrint').addEventListener('click',function(){window.print();});ov.querySelector('#protoClose').addEventListener('click',function(){ov.hidden=true;});ov.addEventListener('click',function(e){if(e.target===ov)ov.hidden=true;});return ov;}
 function showProtocol(d){try{if(window.LVHOOK)window.LVHOOK.serie(String(d.tool||"uebung"),String(d.tool||""),d.correct|0,d.total|0);}catch(_e){}var ov=ensureProtoOverlay();var pct=d.total?Math.round(d.correct/d.total*100):0;var a=protoAssess(pct);var date=new Date().toLocaleDateString('de-CH');var missList=(d.misses&&d.misses.length)?('<h3>Fehler im Detail ('+d.misses.length+')</h3><div class="proto-miss">'+d.misses.join('')+'</div>'):'<p class="proto-none">Keine Fehler in dieser Serie – alle Aufgaben richtig gelöst.</p>';document.getElementById('protoBody').innerHTML='<div class="proto-head"><div><div class="proto-eyebrow">Protokoll · '+protoEsc(d.app)+'</div><h2>'+protoEsc(d.tool)+'</h2></div><div class="proto-badge" style="color:'+a[1]+';background:'+a[2]+'">'+a[0]+'</div></div><div class="proto-meta"><span>Name: <span class="proto-line"></span></span><span>Datum: '+date+'</span></div><div class="proto-kpis"><div class="kpi"><div class="kpi-n">'+d.total+'</div><div class="kpi-l">Aufgaben</div></div><div class="kpi"><div class="kpi-n" style="color:#1E7454">'+d.correct+'</div><div class="kpi-l">richtig</div></div><div class="kpi"><div class="kpi-n" style="color:#d5473e">'+d.wrong+'</div><div class="kpi-l">falsch</div></div><div class="kpi"><div class="kpi-n">'+pct+' %</div><div class="kpi-l">Erfolgsquote</div></div>'+(d.maxStreak?'<div class="kpi"><div class="kpi-n">'+d.maxStreak+'</div><div class="kpi-l">längste Serie</div></div>':'')+'</div>'+protoDiffTable(d.byDiff)+'<div class="proto-assess"><b>Einschätzung:</b> '+protoAssessText(pct,d.byDiff)+'</div>'+missList;ov.hidden=false;ov.scrollTop=0;}
 
@@ -1443,7 +1627,7 @@ function showProtocol(d){try{if(window.LVHOOK)window.LVHOOK.serie(String(d.tool|
             ${catKeys.map(k=>`<option value="${k}">${GROESSEN[k].name}</option>`).join('')}
           </select>
           <span class="pill-diff" id="g-diff">
-            <button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button>
+            <button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button>
           </span>
         </div>
       </div>
@@ -1524,7 +1708,7 @@ function showProtocol(d){try{if(window.LVHOOK)window.LVHOOK.serie(String(d.tool|
           <input class="opt" id="gg-count" type="number" min="4" max="40" value="16">
           <label style="margin-top:8px">Schwierigkeit</label>
           <span class="pill-diff" id="gg-diff">
-            <button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button>
+            <button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button>
           </span>
         </div>
       </div>
@@ -1549,7 +1733,7 @@ function showProtocol(d){try{if(window.LVHOOK)window.LVHOOK.serie(String(d.tool|
    2) DIREKTE & 3) INDIREKTE PROPORTIONALITÄT
 ============================================================ */
 /*SHARED-START*/
-const DIFFLAB=['','leicht','mittel','schwer'];
+const DIFFLAB=['','Grundanforderungen','Erweitert','Anspruchsvoll'];
 // true, wenn v ein ganzzahliges Vielfaches von 1/f ist (z.B. smoothBy(x,20) = auf 5 Rappen genau)
 function smoothBy(v,f){ return Math.abs(v*f-Math.round(v*f))<1e-6; }
 
@@ -1766,7 +1950,7 @@ function buildPropPractice(hostSel, prefix, gen, title){
     <div class="sheet">
       <div class="sheet-head">
         <div class="scoreline"><span>Richtig: <b id="${prefix}-ok">0</b></span><span>Falsch: <b id="${prefix}-no" class="p-no">0</b></span><span class="streak" id="${prefix}-streak">Serie: 0 🔥</span></div>
-        <span class="pill-diff" id="${prefix}-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+        <span class="pill-diff" id="${prefix}-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>
       </div>
       <div class="qtext" id="${prefix}-q"></div>
       <div class="answer-row">
@@ -1822,7 +2006,7 @@ function buildPropGenerator(hostSel,prefix,gen,titleShort){
         </div>
         <div class="field">
           <label>Schwierigkeit</label>
-          <span class="pill-diff" id="${prefix}g-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+          <span class="pill-diff" id="${prefix}g-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>
           <p class="hint" style="margin-top:10px">Jede Aufgabe wird mit ausgeschriebenem Zweisatz-Lösungsweg im Lösungsteil abgebildet.</p>
         </div>
       </div>
@@ -2019,7 +2203,7 @@ function drawGraphAxes(ctx,size){
       <div class="sheet-head">
         <div class="scoreline"><span>Richtig: <b id="f-ok">0</b></span><span>Falsch: <b id="f-no" class="p-no">0</b></span><span class="streak" id="f-streak">Serie: 0 🔥</span></div>
         <div style="display:flex;gap:8px;align-items:center">
-          <span class="pill-diff" id="f-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+          <span class="pill-diff" id="f-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>
           <button class="btn btn-ghost" id="f-next">Nächste Aufgabe</button>
         </div>
       </div>
@@ -2402,7 +2586,7 @@ var EXAM_API=(function(){
    zusaetzlich _dragSort:true und _items:[{disp,val},...] – siehe renderOrdn().
 ============================================================================ */
 var LK=(function(){
-  var DL={1:'leicht',2:'mittel',3:'schwer'};
+  var DL={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'};
   var ORDNCOL=['#2f6690','#a9431e','#1e7454','#7d4a9e','#b5731b'];
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function plain(h){return String(h||'').replace(/<br\s*\/?>/g,' ').replace(/<sup>/g,'^').replace(/<\/sup>/g,'')
@@ -2557,7 +2741,7 @@ var LK=(function(){
         '<button class="lk-btn lk-gho" data-a="all">Alle</button><button class="lk-btn lk-gho" data-a="none">Keine</button></div>'+
       groupsHTML+
       '<div class="lk-row"><span class="lk-lab">Schwierigkeit:</span><span class="lk-pill lk-diff">'+
-        '<button data-d="1" class="on">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>'+
+        '<button data-d="1" class="on">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>'+
         '<span class="lk-lab" style="margin-left:8px">Anzahl Aufgaben:</span>'+
         '<input class="lk-in lk-count" type="number" min="'+cfg.min+'" max="'+cfg.max+'" value="'+cfg.def+'" style="width:84px" aria-label="Anzahl Aufgaben">'+
         '<span class="lk-lab" style="margin-left:8px">Name:</span>'+
@@ -3017,7 +3201,7 @@ var LK=(function(){
         <span class="gen-note">Modus:</span>
         <span class="pill-diff" id="k-mode"><button data-m="ablesen" class="active">Ablesen</button><button data-m="einzeichnen">Einzeichnen</button><button data-m="quadrant">Quadrant</button><button data-m="spiegeln">Spiegeln</button></span>
         <span class="gen-note" style="margin-left:6px">Bereich:</span>
-        <span class="pill-diff" id="k-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+        <span class="pill-diff" id="k-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>
       </div>
       <p class="qsub" id="k-prompt"></p>
       <div class="stimulus" id="k-canvas" style="justify-content:center"></div>
@@ -3131,7 +3315,7 @@ var LK=(function(){
           <label style="margin-top:8px">Anzahl Punkte <span class="gen-note">(bei «Figur»: Anzahl Eckpunkte)</span></label>
           <input class="opt" id="kg-count" type="number" min="4" max="12" value="8">
           <label style="margin-top:8px">Bereich</label>
-          <span class="pill-diff" id="kg-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>
+          <span class="pill-diff" id="kg-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>
         </div>
       </div>
       <div class="gen-actions">
@@ -3557,16 +3741,16 @@ function renderIllus(root){(root||document).querySelectorAll('.illu[data-draw]')
 });}
 if(!(window.LVHOOK&&window.LVHOOK.blockInit()))renderIllus();
 /* ===== Lernkontrolle ===== */
-(function(){
+function T(key,nav){return {key:key,nav:nav,gen:function(d){return EXAM_API[key](d);},practice:function(){goPractice(key);}};}
+function mountLK(){
   var host=document.getElementById('lk-host'); if(!host||typeof LK==='undefined')return;
-  function practice(v){return function(){showView(v);var b=document.querySelector('#view-'+v+' .tab[data-panel="uebn"]');if(b)b.click();};}
-  function T(key,nav){return {key:key,nav:nav,gen:function(d){return EXAM_API[key](d);},practice:practice(key)};}
-  LK.mount(host,{subject:'Funktionen und Grössen',min:4,max:30,def:10,groups:[
+  LK.mount(host,{subject:'Funktionen und Grössen',min:4,max:30,def:10,preselect:LK_SCOPE,groups:[
     {title:'Grössen',topics:[T('groessen','Grössen umrechnen')]},
     {title:'Funktionen',topics:[T('direkt','Direkte Proportionalität'),T('indirekt','Indirekte Proportionalität'),T('fuell','Füllgraphen von Gefässen')]},
     {title:'Koordinaten',topics:[T('koordinaten','Koordinatensystem')]}
   ]});
-})();
+}
+if(!(window.LVHOOK&&window.LVHOOK.blockInit()))mountLK();
 </script>
 </body>
 </html>

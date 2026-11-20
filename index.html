@@ -2616,10 +2616,12 @@ function buildGenericPractice(hostSel, prefix, gen, title){
       <div class="qtext" id="${prefix}-q"></div>
       <div class="answer-row" id="${prefix}-ans"></div>
       <div class="feedback" id="${prefix}-fb"></div>
+      <div class="answer-row"><button class="btn btn-ghost" id="${prefix}-next">Nächste Aufgabe</button></div>
       ${serieBarHTML(prefix)}
     </div>
     <details class="misslog" id="${prefix}-miss" hidden><summary>Gemachte Fehler (<span id="${prefix}-mc">0</span>)</summary><div id="${prefix}-mlist"></div></details>`;
   $('#'+prefix+'-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;$$('#'+prefix+'-diff button').forEach(x=>x.classList.toggle('active',x===b));next();});
+  $('#'+prefix+'-next').addEventListener('click',next);
   function stimInto(){
     const el=$('#'+prefix+'-stim'); el.innerHTML='';
     if(cur.stim){ el.style.display='flex'; const {c,ctx}=makeCanvas(cur.stimSize||200); cur.stim(ctx,cur.stimSize||200); el.appendChild(c);
